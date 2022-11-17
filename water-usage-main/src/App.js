@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap';
 
 //import for bootstrap css
 import NavbarComponent from './components/Navbar';
