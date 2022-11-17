@@ -10,7 +10,7 @@ import Hero from './components/Hero.js';
 
 import Carousel from './components/Carousel'
 import Cards from './components/Cards'
-import Footer from './components/Footer';
+import FooterComponent from './components/Footer';
 
 
 function App() {
@@ -45,15 +45,14 @@ function App() {
         </script>
 
       </header>
+      <NavbarComponent />
       <Carousel />
       <Cards />
 
       {/* Hero Component  */}
       <Hero />
-
-
       <Map />
-
+      <FooterComponent />
     </div>
   );
 }
