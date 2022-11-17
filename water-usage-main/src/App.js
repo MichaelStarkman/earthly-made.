@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import Map from './components/Map'
 import './App.css';
 
 //import for bootstrap css
@@ -22,7 +23,7 @@ function App() {
         src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
         crossorigin></script>
       </header>
-
+      <Map />
     </div>
   );
 }
