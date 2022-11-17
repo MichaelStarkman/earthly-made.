@@ -2,8 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 //import for bootstrap css
-import Navbar from 'react-bootstrap/Navbar'
-import Container from 'react-bootstrap/Container'
+import NavbarComponent from './components/Navbar';
 
 function App() {
   return (
@@ -21,12 +20,7 @@ function App() {
         src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
         crossorigin></script>
       </header>
-      <Navbar>
-        <h1>test</h1>
-      </Navbar>
-      <Container className='p-5'>
-        <h1>hello world</h1>
-      </Container>
+      <NavbarComponent />
 
     </div>
   );
