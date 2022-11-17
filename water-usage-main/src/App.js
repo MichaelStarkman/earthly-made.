@@ -1,11 +1,17 @@
 import Map from './components/Map'
 import './App.css';
+import 'bootstrap';
 
 //import for bootstrap css
 import NavbarComponent from './components/Navbar';
+
+import ModalComponent from './components/modal'
+import Hero from './components/Hero.js';
+
 import Carousel from './components/Carousel'
 import Cards from './components/Cards'
 import Footer from './components/Footer';
+
 
 function App() {
   return (
@@ -42,7 +48,12 @@ function App() {
       <Carousel />
       <Cards />
 
+      {/* Hero Component  */}
+      <Hero />
+
+
       <Map />
+
     </div>
   );
 }

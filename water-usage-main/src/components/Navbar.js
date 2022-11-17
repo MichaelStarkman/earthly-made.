@@ -7,6 +7,7 @@ import '../App.css'
 
 function NavbarComponent() {
   return (
+
     <Navbar className='headerFooter' expand="lg">
       <Container className="d-flex justify-content-around">
         <Navbar.Brand className='give-absolute' href="#home">earthly made.</Navbar.Brand>
