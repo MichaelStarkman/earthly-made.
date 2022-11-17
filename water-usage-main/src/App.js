@@ -4,10 +4,12 @@ import './App.css';
 
 //import for bootstrap css
 import NavbarComponent from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
+
       <header>
         {/* css for bootstrap */}
         <link
@@ -21,7 +23,6 @@ function App() {
         src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
         crossorigin></script>
       </header>
-      <NavbarComponent />
       <Map />
     </div>
   );
