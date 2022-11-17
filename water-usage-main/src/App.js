@@ -3,6 +3,7 @@ import './App.css';
 
 //import for bootstrap css
 import NavbarComponent from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       </header>
       <NavbarComponent />
 
+      <Footer />
     </div>
   );
 }
