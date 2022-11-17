@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import Map from './components/Map'
 import './App.css';
 
 //import for bootstrap css
@@ -21,7 +22,7 @@ function App() {
         crossorigin></script>
       </header>
       <NavbarComponent />
-
+      <Map />
     </div>
   );
 }
