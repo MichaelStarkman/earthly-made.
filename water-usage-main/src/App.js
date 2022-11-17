@@ -1,10 +1,11 @@
-// import logo from './logo.svg';
+import Map from './components/Map'
 import './App.css';
 
 //import for bootstrap css
 import NavbarComponent from './components/Navbar';
 import Carousel from './components/Carousel'
-// import Cards from './components/Cards'
+import Cards from './components/Cards'
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -38,10 +39,10 @@ function App() {
         </script>
 
       </header>
-      <NavbarComponent />
       <Carousel />
-      {/* <Cards /> */}
+      <Cards />
 
+      <Map />
     </div>
   );
 }
