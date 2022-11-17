@@ -3,27 +3,27 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import '../App.css'
+
 function NavbarComponent() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">Fast Fassion Foibles</Navbar.Brand>
+
+    <Navbar className='headerFooter' expand="lg">
+      <Container className="d-flex justify-content-around">
+        <Navbar.Brand className='give-absolute' href="#home">earthly made.</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+        <Navbar.Collapse id="basic-navbar-nav" className=''>
+          <Nav className="w-100 d-flex justify-content-between">
+            <div className='d-flex flex-row'>
+                <Nav.Link className='p-3' href="#link"><u>Map</u></Nav.Link>
+                <Nav.Link className='p-3' href="#home"><u>Nav Item</u></Nav.Link>
+                <Nav.Link className='p-3' href="#home"><u>Nav Item</u></Nav.Link>
+            </div>
+
+            <div className='d-flex flex-row'>
+                <Nav.Link className='p-3' href="#home"><u>Nav Item</u></Nav.Link>
+                <Nav.Link className='p-3' href="#home"><u>Nav Item</u></Nav.Link>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>
