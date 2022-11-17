@@ -3,6 +3,7 @@ import './App.css';
 
 //import for bootstrap css
 import NavbarComponent from './components/Navbar';
+import Carousel from './components/Carousel'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         crossorigin></script>
       </header>
       <NavbarComponent />
+      <Carousel />
 
     </div>
   );
