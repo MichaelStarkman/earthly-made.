@@ -3,6 +3,8 @@ import './App.css';
 
 //import for bootstrap css
 import NavbarComponent from './components/Navbar';
+import modalComponent from './components/modal'
+import Hero from './components/Hero.js';
 
 function App() {
   return (
@@ -22,6 +24,9 @@ function App() {
         crossorigin></script>
       </header>
       <NavbarComponent />
+
+      {/* Hero Component  */}
+      <Hero />
 
     </div>
   );
