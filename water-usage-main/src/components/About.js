@@ -78,9 +78,15 @@ const mapDevs = programmers.map((dev) => {
             <a href={dev.portfolio}>Portfolio</a>
           </div>
       </div>
-      <div className='aboutPageInner'>
-        <img src={dev.url} alt={dev.name} />
-        <p>{dev.blurb}</p>
+      <div className='aboutPageInner container'>
+        <div className='row'>
+          <div className='col-xl'>
+            <img src={dev.url} alt={dev.name} />
+          </div>
+          <div className='col-xl'>
+            <p>{dev.blurb}</p>
+          </div>
+        </div>
       </div>
     </div>
   )
@@ -95,9 +101,15 @@ const mapDesign = designers.map((dev) => {
           <a href={dev.portfolio}>Portfolio</a>
         </div>
       </div>
-      <div className='aboutPageInner'>
-        <img src={dev.url} alt={dev.name} />
-        <p>{dev.blurb}</p>
+      <div className='aboutPageInner container'>
+        <div className='row'>
+          <div className='col-xl'>
+            <img src={dev.url} alt={dev.name} />
+          </div>
+          <div className='col-xl'>
+            <p>{dev.blurb}</p>
+          </div>
+        </div>
       </div>
     </div>
   )
