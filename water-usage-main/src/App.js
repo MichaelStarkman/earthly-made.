@@ -1,16 +1,17 @@
-import Map from './components/Map'
+// import Map from './components/Map'
 import './App.css';
 import 'bootstrap';
 
 //import for bootstrap css
 import NavbarComponent from './components/Navbar';
-
-import ModalComponent from './components/modal'
-import Hero from './components/Hero.js';
-
 import Carousel from './components/Carousel'
-import Cards from './components/Cards'
-import FooterComponent from './components/Footer';
+
+// import ModalComponent from './components/modal'
+// import Hero from './components/Hero.js';
+
+
+// import Cards from './components/Cards'
+// import FooterComponent from './components/Footer';
 
 
 function App() {
@@ -46,13 +47,13 @@ function App() {
 
       </header>
       <NavbarComponent />
-      <Hero />
+      {/* <Hero /> */}
       <Carousel />
-      <Cards />
+      {/* <Cards />
 
       
       <Map />
-      <FooterComponent />
+      <FooterComponent /> */}
     </div>
   );
 }
