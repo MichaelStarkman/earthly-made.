@@ -12,7 +12,7 @@ function Map() {
     const [lat, setLat] = useState(33);
     const [zoom, setZoom] = useState(9);
 
-    // marker setting for search result location
+    // marker setting for search result
     const marker = new mapboxgl.Marker({ color:'#008000' })
 
     // setup for possible tilequery search
@@ -57,11 +57,15 @@ function Map() {
             console.log(goodwillsjson.features[0].center)
 
             // sets markers for each goodwill
-            goodwillsjson.features.map(coordinate => {
-                const marker = new mapboxgl.Marker({ color:'#008005' })
-                return (
-                    marker.setLngLat(coordinate.center).addTo(map.current)
-                )
+            // goodwillsjson.features.map(coordinate => {
+            //     const marker = new mapboxgl.Marker({ color:'#008005' })
+            //     return (
+            //         marker.setLngLat(coordinate.center).addTo(map.current)
+            //     )
+            // })
+            goodwillsjson.features.forEach(coordinate => {
+                const marker = new mapboxgl.Marker({ color:'#FFC0CB' })
+                marker.setLngLat(coordinate.center).addTo(map.current)
             })
 
             // marker.setLngLat(goodwillsjson.features[0].center).addTo(map.current)
