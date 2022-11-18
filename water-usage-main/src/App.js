@@ -49,7 +49,6 @@ function App() {
       <Carousel />
       <Cards />
 
-      {/* Hero Component  */}
       <Hero />
       <Map />
       <FooterComponent />
