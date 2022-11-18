@@ -13,6 +13,68 @@
   
 }
 
+
+@media (max-width: 1200px) {
+  .aboutContainer {
+    flex-direction: column;
+  }
+
+  .aboutPageCol {
+    width: 100%;
+  }
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 140px;
+}
+
+.aboutPage {
+  justify-content: center;
+}
+
+.aboutPage img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  
+}
+
+
+.aboutPage a {
+  padding: 3px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.aboutPage p {
+  padding: 10px;
+  font-size: 18px;
+}
+
+
+.aboutPageDev {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 10px;
+}
+
+.aboutPageInner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+/* @media screen (min-width: 992 ) {
+  
+} */
+
 .hero-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('https://s2.research.com/wp-content/uploads/2022/05/06092018/environmental-1200x600.jpeg');
   background-position: center;
@@ -25,3 +87,4 @@
   text-align: center;
   color: white;
 }
+
