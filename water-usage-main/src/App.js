@@ -14,9 +14,9 @@ import Cards from './components/Cards'
 function App() {
   return (
     <div className="App">
-      <Hero />
+      <Hero /> {/* .Cards now lives in here */}
       <Carousel />
-      <Cards />      
+      {/* <Cards />  Moved these Cards into the Hero section     */}
       <Map />
     </div>
   );
