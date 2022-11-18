@@ -4,7 +4,9 @@ import 'bootstrap';
 
 //import for bootstrap css
 import ModalComponent from './components/modal'
-import Hero from './components/Hero.js';
+
+import Hero from './components/Hero.jsx';
+
 import Carousel from './components/Carousel'
 import Cards from './components/Cards'
 
@@ -12,9 +14,9 @@ import Cards from './components/Cards'
 function App() {
   return (
     <div className="App">
-      <Hero />
+      <Hero /> {/* .Cards now lives in here */}
       <Carousel />
-      <Cards />      
+      {/* <Cards />  Moved these Cards into the Hero section     */}
       <Map />
     </div>
   );

@@ -13,6 +13,7 @@
   
 }
 
+
 @media (max-width: 1200px) {
   .aboutContainer {
     flex-direction: column;
@@ -73,3 +74,17 @@
 /* @media screen (min-width: 992 ) {
   
 } */
+
+.hero-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('https://s2.research.com/wp-content/uploads/2022/05/06092018/environmental-1200x600.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-txt {
+  text-align: center;
+  color: white;
+}
+
