@@ -13,7 +13,7 @@ function Map() {
     const [zoom, setZoom] = useState(9);
 
     // marker setting for search result
-    const marker = new mapboxgl.Marker({ color:'#008000' })
+    const marker = new mapboxgl.Marker({ color: '#008000' })
 
     // setup for possible tilequery search
     const radius = 4828032
@@ -59,7 +59,7 @@ function Map() {
             // console.log(point)
 
             // searches goodwills near area with a bordered box of .2 difference
-            const goodwills = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/thrift+store.json?bbox=${point[0]-.2}%2C${point[1]-.2}%2C${point[0]+.2}%2C${point[1]+.2}&proximity=${point[0]}%2C${point[1]}&types=poi&access_token=${mapboxgl.accessToken}`, {method: 'GET'})
+            const goodwills = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/thrift+store.json?bbox=${point[0] - .2}%2C${point[1] - .2}%2C${point[0] + .2}%2C${point[1] + .2}&proximity=${point[0]}%2C${point[1]}&types=poi&access_token=${mapboxgl.accessToken}`, { method: 'GET' })
             const goodwillsjson = await goodwills.json()
             // console.log(goodwillsjson)
 
@@ -72,10 +72,10 @@ function Map() {
             // })
 
             goodwillsjson.features.forEach(coordinate => {
-                const markee = new mapboxgl.Marker({ color:'#FFC0CB' })
+                const markee = new mapboxgl.Marker({ color: '#FFC0CB' })
                 storeMarker.current = [...storeMarker.current, markee]
                 markee.setLngLat(coordinate.center).addTo(map.current)
-                
+
             })
 
             console.log(storeMarker.current)
@@ -90,7 +90,7 @@ function Map() {
             // console.log(json)
         })
 
-        
+
 
 
     });
@@ -98,10 +98,15 @@ function Map() {
 
 
     return (
-        <div>
+        <div className='outerMapContainer'>
             <div ref={mapContainer} className='map-container' />
-            <div>
-
+            <div className='sidebar'>
+                <div>
+                    <p>Test Result Card</p>
+                </div>
+                <div>
+                    <p>Result 1</p>
+                </div>
             </div>
         </div>
     )
