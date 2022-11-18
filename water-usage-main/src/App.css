@@ -109,3 +109,16 @@
   color: white;
 }
 
+.articlePageContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.articlePageTitle {
+  align-self: flex-start;
+  margin: 2em;
+}
