@@ -46,11 +46,11 @@ function App() {
 
       </header>
       <NavbarComponent />
+      <Hero />
       <Carousel />
       <Cards />
 
-      {/* Hero Component  */}
-      <Hero />
+      
       <Map />
       <FooterComponent />
     </div>

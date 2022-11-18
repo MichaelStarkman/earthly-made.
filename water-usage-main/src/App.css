@@ -13,6 +13,7 @@
   
 }
 
-.HeroBackground {
-  background-image: url("https://richardsonbay.audubon.org/sites/default/files/styles/article_hero_inline/public/fast_fashion_trash_0.jpeg?itok=k51OT4Sw");
+.carousel-caption {
+  position: absolute;
+  top: 140px;
 }
