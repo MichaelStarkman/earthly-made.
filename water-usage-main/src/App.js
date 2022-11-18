@@ -45,13 +45,13 @@ function App() {
         </script>
 
       </header>
-      {/* <NavbarComponent />
+      <NavbarComponent />
       <Carousel />
-      <Cards /> */}
+      <Cards />
 
       <Hero />
-      {/* <Map />
-      <FooterComponent /> */}
+      {/* <Map /> */}
+      <FooterComponent />
     </div>
   );
 }

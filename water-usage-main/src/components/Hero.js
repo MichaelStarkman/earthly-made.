@@ -5,17 +5,10 @@ const Hero = () => {
 
 	return (
 		<>
-			<div class="container has-bg-img">
-				<img src="https://publicinterestnetwork.org/wp-content/uploads/2021/03/waste_is_out_of_fashion_shutterstock-1500x844.jpg" class="bg-img"></img>
-				<div class="d-flex flex-row shadow p-3 mb-5 bg-white rounded sticky-top">
-					<h1>Earthly Made</h1>
-				</div>
-				<div class="d-flex flex-row alignitems-left">
-					<div class="d-flex flex-column justify-content-start shadow p-3 mb-5 bg-white rounded">
-						<h3 class="text-left">Transforming the was we engage with fashion...</h3>
-						<h3 class="text-left">Find and learn sustainable fashion...</h3>
-					</div>
-				</div>
+			<div class="has-bg-img">
+				<h2>Hero Section</h2>
+				<h4>It's easy to set background image with Torus Kit</h4>
+				<img class="bg-img" src="https://i.guim.co.uk/img/media/b96fba1cf27f712298e3e6c86bd14cd47fd0083a/531_4_3173_1904/master/3173.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=c1900b0faa14f5886d14e7fe1b9935ab" />
 			</div>
 		</>
 	)
