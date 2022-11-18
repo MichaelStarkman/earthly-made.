@@ -42,8 +42,10 @@ const programmers = [
 const designers = [
   {
     name: 'Dan Elliget',
-    url: 'photo',
-    blurb: 'about',
+    url: 'https://i.imgur.com/zHDAl3t.png',
+    blurb: ['UX Designer thats all about sports, superheroes, and food! (Not necessarily in that order). Based in Seattle, I love my rain, coffee, and seafood ', <span>	
+    &#128521;</span>,
+    ' Always looking to connect and collaborate to make awesome designs and experiences. Message me to collab or just to chat too!'],
     github: null,
     linkedin: 'www.linkedin.com/in/dan-elliget',
     portfolio: 'https://danelliget.squarespace.com/'
@@ -58,8 +60,8 @@ const designers = [
   },
   {
     name: 'Sally Yang',
-    url: 'photo',
-    blurb: 'about',
+    url: 'https://i.imgur.com/u8rPRoE.png',
+    blurb: "UX Designer with a background in psychology and clinical research, I enjoy immersing myself in all the moving parts of an experience — from the tiny details that play at our subconscious biases to the larger flows of systems and the way they harmonize with one another. in my down time, i am usually at a coffee shop on figma practicing and sharpening my design skills! feel free to reach out for coffee recommendations, collaborate on design projects, and/or ask me on any projects I've worked on!",
     github: null,
     linkedin: 'https://www.linkedin.com/in/sallyjyang/',
     portfolio: 'https://www.sallyjyang.design/'
@@ -72,7 +74,7 @@ const mapDevs = programmers.map((dev) => {
     <div key={`${dev.name}`} className='aboutPageDev'>
       <div>
         <h1>{dev.name} - Engineer</h1>
-          <div>
+          <div className='linkHold'>
             <a href={dev.linkedin}>Linkedin</a>
             <a href={dev.github}>Github</a>
             <a href={dev.portfolio}>Portfolio</a>
@@ -81,9 +83,9 @@ const mapDevs = programmers.map((dev) => {
       <div className='aboutPageInner container'>
         <div className='row'>
           <div className='col-xl'>
-            <img src={dev.url} alt={dev.name} />
-          </div>
-          <div className='col-xl'>
+            <div className='imageHold'>
+              <img className='left' src={dev.url} alt={dev.name} />
+            </div>
             <p>{dev.blurb}</p>
           </div>
         </div>
@@ -96,17 +98,17 @@ const mapDesign = designers.map((dev) => {
     <div key={`${dev.name}`} className='aboutPageDev'>
       <div>
         <h1>{dev.name} - Designer</h1>
-        <div>
+        <div className='linkHold'>
           <a href={dev.linkedin}>Linkedin</a>
           <a href={dev.portfolio}>Portfolio</a>
         </div>
       </div>
       <div className='aboutPageInner container'>
         <div className='row'>
-          <div className='col-xl'>
-            <img src={dev.url} alt={dev.name} />
-          </div>
-          <div className='col-xl'>
+          <div className='col-xl holder'>
+            <div className='imageHold'>
+              <img className='left' src={dev.url} alt={dev.name} />
+            </div>
             <p>{dev.blurb}</p>
           </div>
         </div>
