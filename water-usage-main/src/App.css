@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -22,6 +23,7 @@
   .aboutPageCol {
     width: 100%;
   }
+
 }
 
 .carousel-caption {
@@ -33,11 +35,31 @@
   justify-content: center;
 }
 
+.imageHold {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.linkHold {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
 .aboutPage img {
   width: 150px;
   height: 150px;
+  margin: 20px;
   border-radius: 100%;
   
+}
+
+.holder {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -45,7 +67,6 @@
   padding: 3px;
   text-decoration: none;
   font-weight: bold;
-  margin: 0 10px;
 }
 
 .aboutPage p {
@@ -58,22 +79,22 @@
   margin: 0 auto;
   margin-top: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 80%;
   padding: 10px;
 }
 
-.aboutPageInner {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10px;
+.aboutPageDev h1 {
+  font-size: 32px;
 }
 
-/* @media screen (min-width: 992 ) {
-  
-} */
+.aboutPageInner {
+
+  flex-direction: row;
+  padding-top: 10px;
+}
 
 .hero-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('https://s2.research.com/wp-content/uploads/2022/05/06092018/environmental-1200x600.jpeg');
