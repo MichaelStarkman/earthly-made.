@@ -51,7 +51,7 @@ function App() {
       <Cards />
 
       
-      {/* <Map /> */}
+      <Map />
       <FooterComponent />
     </div>
   );
