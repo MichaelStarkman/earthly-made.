@@ -12,9 +12,18 @@ code {
     monospace;
 }
 
+/* outer mapbox div */
+.outerMapContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
 /* mapbox */
 .map-container {
-  height: 700px;
+  height: 50vh;
+  width: 50vw;
 }
 
 /* part of mapbox */
@@ -24,9 +33,9 @@ code {
   padding: 6px 12px;
   font-family: monospace;
   z-index: 1;
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   margin: 12px;
   border-radius: 4px;
   }
