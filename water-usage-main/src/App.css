@@ -12,3 +12,8 @@
   }
   
 }
+
+.carousel-caption {
+  position: absolute;
+  top: 140px;
+}
