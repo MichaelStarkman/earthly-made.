@@ -105,13 +105,16 @@ const mapDesign = designers.map((dev) => {
 
 const About = () => {
   return (
-    <div className='d-flex flex-row aboutPage'>
-        <div className='d-flex flex-column aboutPageCol'>
+    <div className='aboutPage container'>
+      <div className='row'>
+        <div className='col-xxl'>
           {mapDesign}
         </div>
-        <div className='d-flex flex-column aboutPageCol'>
+        <div className='col-xxl'>
           {mapDevs}
         </div>
+        
+      </div>
     </div>
   )
 }

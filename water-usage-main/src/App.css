@@ -13,13 +13,22 @@
   
 }
 
+@media (max-width: 1200px) {
+  .aboutContainer {
+    flex-direction: column;
+  }
+
+  .aboutPageCol {
+    width: 100%;
+  }
+}
+
 .carousel-caption {
   position: absolute;
   top: 140px;
 }
 
 .aboutPage {
-  display: flex;
   justify-content: center;
 }
 
@@ -28,6 +37,7 @@
   height: 150px;
   border-radius: 100%;
 }
+
 
 .aboutPage a {
   padding: 3px;
@@ -42,9 +52,6 @@
   margin-left: 20px;
 }
 
-.aboutPageCol {
-  width: 45%;
-}
 
 .aboutPageDev {
   margin: 0 auto;
@@ -61,3 +68,7 @@
   justify-content: center;
   padding-top: 10px;
 }
+
+/* @media screen (min-width: 992 ) {
+  
+} */
