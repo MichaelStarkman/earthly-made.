@@ -1,4 +1,6 @@
-const Hero = () => {
+
+
+const Hero = (props) => {
 
 	return (		
 			<div class="container hero-img">
