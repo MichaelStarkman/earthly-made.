@@ -4,7 +4,9 @@ import 'bootstrap';
 
 //import for bootstrap css
 import ModalComponent from './components/modal'
-import Hero from './components/Hero.js';
+
+import Hero from './components/Hero.jsx';
+
 import Carousel from './components/Carousel'
 import Cards from './components/Cards'
 
