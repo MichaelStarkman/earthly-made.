@@ -1,4 +1,4 @@
-
+import Cards from './Cards.js'
 
 const Hero = (props) => {
 
@@ -14,6 +14,10 @@ const Hero = (props) => {
 						</div> 
 					</div> 
 				</div>
+				<div>
+					<Cards />
+				</div>
+				
 			</div>
 	)
 
