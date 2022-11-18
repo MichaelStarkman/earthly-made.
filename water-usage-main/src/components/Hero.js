@@ -1,6 +1,6 @@
 import 'bootstrap'
 
-
+// uses a modified carousel-caption class from app.css
 const Hero = () => {
 
 	return (
