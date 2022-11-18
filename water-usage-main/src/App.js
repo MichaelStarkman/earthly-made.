@@ -9,6 +9,7 @@ import Hero from './components/Hero.jsx';
 
 import Carousel from './components/Carousel'
 import Cards from './components/Cards'
+import Articles from './components/Articles';
 
 
 function App() {
