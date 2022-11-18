@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import App from './App';
 import NavbarComponent from './components/Navbar';
-import About from './components/About';
+import About from './components/About.js';
 import FooterComponent from './components/Footer';
 import Header from './components/Header';
 

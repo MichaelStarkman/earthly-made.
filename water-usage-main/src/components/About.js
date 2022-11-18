@@ -30,9 +30,9 @@ const programmers = [
   }, 
   {
     name: 'Steven Laff',
-    url: 'photo',
-    blurb: '',
-    github: '',
+    url: 'https://i.imgur.com/eOauaEa.png',
+    blurb: 'I’m a New York based Full Stack Developer looking for great problems to solve. With 10 years of IT experience, I can plug right into any team environment and hit the ground running.',
+    github: 'https://github.com/LaffSteven',
     linkedin: 'https://www.linkedin.com/in/steven-laff',
     portfolio: 'https://github.com/LaffSteven'
   }
