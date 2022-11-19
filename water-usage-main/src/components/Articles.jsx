@@ -5,11 +5,24 @@ import FeaturedArticles from "./articles/FeaturedArticles.jsx"
 const Articles = () => {
 	return (
 		<>
-			{/* Article Page Title */}
-			<ArticlePageTitle />
+			<div class="container-lg">
+				<div class="row">
+						{/* Article Page Header */}
+						<ArticlePageTitle />
+				</div>
+			
 			<br />
-			{/* Featuerd Articles -- 3 Articles split into two columns */}
-			<FeaturedArticles />
+
+			<div class="container-lg">
+				<div class="row">
+					{/* Featuerd Articles -- 3 Articles split into two columns */}
+				<FeaturedArticles />
+				</div>
+				
+			</div>
+			
+			</div>
+			
 		</>
 	)
 }
