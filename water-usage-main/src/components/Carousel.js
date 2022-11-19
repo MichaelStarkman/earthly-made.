@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Carousel, Stack, Button, CarouItem } from 'react-bootstrap';
+import { Card, Carousel, Stack, Button, CarouselItem } from 'react-bootstrap';
 
 const BrandsCarousel = () => {
 
@@ -24,28 +24,6 @@ const BrandsCarousel = () => {
       ]
     }
 ]
-
-
-
-  // const populateSlides = (slideNum) => {
-    //get brand index based on slide-num 1=0,1,2 2=3,4,5
-  //   brands.forEach(()=>{
-  //     return(
-  //       <>
-  //         <Card></Card>
-  //       </>
-  //     )
-  //   })
-  // }
-
-  // const generateslides = () => {
-    //divide number of brands by three, generate a slide, 
-    //then call the populateSlides method to add the three brands to the slide?
-
-  //   return(
-  //     <Carousel.Item>{pupolateSlide(slideNum)} />
-  //   )
-  // }
 
   return (
     <>

@@ -13,10 +13,10 @@ const programmers = [
   }, 
   {
     name: 'Michael Starkman',
-    url: 'photo',
-    blurb: '',
+    url: 'https://i.imgur.com/xYMyI8L.png',
+    blurb: 'I am a full-stack engineer, with a passion for creating efficient, scalable, highly usable web interfaces.',
     github: 'https://github.com/MichaelStarkman',
-    linkedin: '',
+    linkedin: 'https://www.linkedin.com/in/michaelstarkman/',
     portfolio: 'https://www.michaelstarkman.dev/'
   },
   {
