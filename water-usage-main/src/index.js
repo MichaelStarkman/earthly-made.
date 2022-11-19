@@ -9,6 +9,7 @@ import About from './components/About.js';
 import FooterComponent from './components/Footer';
 import Header from './components/Header';
 import Articles from './components/Articles';
+import Brands from './components/brands/Brands';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +21,7 @@ root.render(
         <Route exact path="/" element={<App />} />
         <Route path="/about" element={<About />} />
         <Route path="/articles" element={<Articles />} />
+        <Route path="/brands" element={<Brands />} />
       </Routes>
       {/* <App /> */}
       <FooterComponent />
