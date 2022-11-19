@@ -126,6 +126,9 @@
 .article-wrapper-sm {
   width: 18rem;
 }
+.article-wrapper-lg {
+  width: 54rem;
+}
 
 .article-img {
   width: 100%;

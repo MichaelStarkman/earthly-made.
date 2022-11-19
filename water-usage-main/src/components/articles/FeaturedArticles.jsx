@@ -1,4 +1,5 @@
 import ArticleCard from "./ArticleCard"
+import MainArticle from "./MainArticle"
 
 const testArticle = {
 	url: 'https://www.thegoodtrade.com/features/fair-trade-clothing',
@@ -17,7 +18,7 @@ const FeaturedArticles = () => {
 				<div class="d-flex flex-row justify-content-around">
 					<div class="">
 						{/* Holds one article */}
-						Main Article
+						<MainArticle article={testArticle}/>
 					</div>
 					<div class="d-flex flex-column">
 						{/* Column with two smaller article cards */}
