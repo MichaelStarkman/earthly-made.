@@ -52,8 +52,8 @@ const designers = [
   },
   {
     name: 'Maurcell Melton',
-    url: 'photo',
-    blurb: 'about',
+    url: 'https://i.imgur.com/cE1r5qx.jpg',
+    blurb: ['Product Designer with a passion for helping others achieve their goals one component at a time. I enjoy adventures to the beach, conversations about tech/gaming, and I never shy away from a good challenge. My only happy place is Disneyland, but you can find me smiling at my desk building a nice Minecraft home. I believe that minimal design is not about removing everything, rather it’s about removing the unnecessary in order to focus on what really matters. ', <span>&#10084;</span>],
     github: null,
     linkedin: 'https://www.linkedin.com/in/cellmelton/',
     portfolio: 'cellmelton.com'
