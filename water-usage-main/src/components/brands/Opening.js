@@ -2,7 +2,7 @@ import React from 'react'
 
 const Opening = () => {
   return (
-    <div>
+    <div className='opening'>
         <h1>
             Brands
         </h1>
@@ -11,7 +11,7 @@ const Opening = () => {
             Find sustainable clothing brands...
         </h2>
         <br />
-        <p>Sustainablity Matters</p>
+        <p>Why sustainablity Matters</p>
     </div>
   )
 }

@@ -4,7 +4,7 @@ import CallToAction from './CallToAction'
 import FilterBar from './FilterBar'
 import Opening from './Opening'
 import Shop from './Shop'
-
+import '../../Brand.css'
 const testBrands = [
 
   {
@@ -53,8 +53,8 @@ const testBrands = [
 
 const cards = testBrands.map((brand, i) => {
   return (
-    <div key={`${brand.name}${i}`}>
-      <BrandCards brand={brand} />
+    <div className='fullCard' key={`${brand.name}${i}`}>
+      <BrandCards i={i + 1} brand={brand} />
       <Shop link={brand.link} />
     </div>
   )
@@ -63,11 +63,15 @@ const cards = testBrands.map((brand, i) => {
 
 const Brands = () => {
   return (
-    <div>
-      <Opening />
-      <CallToAction />
-      <FilterBar />
-      {cards}
+    <div className='brandPage'>
+      <div className='opening'>
+          <Opening />
+      </div>
+      <div className='content'>
+        <CallToAction />
+        <FilterBar />
+        {cards}
+      </div>
     </div>
   )
 }
