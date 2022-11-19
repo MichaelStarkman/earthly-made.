@@ -122,3 +122,14 @@
   align-self: flex-start;
   margin: 2em;
 }
+
+.article-wrapper-sm {
+  width: 18rem;
+}
+.article-wrapper-lg {
+  width: 54rem;
+}
+
+.article-img {
+  width: 100%;
+}
