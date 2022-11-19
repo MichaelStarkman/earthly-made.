@@ -10,18 +10,14 @@ function Map() {
     const map = useRef(null);
     const [lng, setLng] = useState(-113.9);
     const [lat, setLat] = useState(33);
-    const [zoom, setZoom] = useState(9);
+    const [zoom, setZoom] = useState(13);
 
-    // marker setting for search result
-    const marker = new mapboxgl.Marker({ color: '#008000' })
 
-    // setup for possible tilequery search
-    const radius = 4828032
-    const limit = 10
 
     // const [storeMarker, setStoreMarker] = useState([])
     const storeMarker = useRef([])
-    const [storeInfo, setStoreInfo] = useState([])
+    const storeInfo = useRef([])
+    const [storeData, setStoreData] = useState([])
 
 
     useEffect(() => {
@@ -29,37 +25,43 @@ function Map() {
         map.current = new mapboxgl.Map({
             container: mapContainer.current,
             style: 'mapbox://styles/mapbox/streets-v11',
-            center: [lng, lat],
+            center: [-113, 33],
             zoom: zoom
         });
+
 
         const geocoder = new MapboxGeocoder({
             // Initialize the geocoder
             accessToken: mapboxgl.accessToken, // Set the access token
             mapboxgl: mapboxgl, // Set the mapbox-gl instance
-            zoom: 13, // Set the zoom level for geocoding results
+            zoom: zoom, // Set the zoom level for geocoding results
             placeholder: 'Enter an address or place name', // This placeholder text will display in the search bar
-            // bbox: [(lng - .3), (lng + .3), (lat - .3), (lat + .3)] // Set a bounding box
+            bbox: [-124.848974, 24.396308, -66.885444, 49.384358], // Set a bounding box
+
         });
         // Add the geocoder to the map
         map.current.addControl(geocoder, 'top-left'); // Add the search box to the top left
-
-
+        const marker = new mapboxgl.Marker({ color: '#008000' })
 
         geocoder.on('result', async (event) => {
             // sets search result location as a variable
             const point = event.result.center;
+
+            // console.log(event)
+
+            // marker setting for search result
 
             // sets a marker on the search result location
             marker.setLngLat(point).addTo(map.current);
 
             storeMarker.current.forEach(marker => marker.remove())
             storeMarker.current = []
+            storeInfo.current = []
 
             // console.log(point)
 
             // searches goodwills near area with a bordered box of .2 difference
-            const goodwills = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/thrift+store.json?bbox=${point[0] - .2}%2C${point[1] - .2}%2C${point[0] + .2}%2C${point[1] + .2}&proximity=${point[0]}%2C${point[1]}&types=poi&access_token=${mapboxgl.accessToken}`, { method: 'GET' })
+            const goodwills = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/thrift+store.json?limit=20&bbox=${point[0] - .2}%2C${point[1] - .2}%2C${point[0] + .2}%2C${point[1] + .2}&proximity=${point[0]}%2C${point[1]}&types=poi&access_token=${mapboxgl.accessToken}`, { method: 'GET' })
             const goodwillsjson = await goodwills.json()
             // console.log(goodwillsjson)
 
@@ -71,15 +73,33 @@ function Map() {
             //     )
             // })
 
-            goodwillsjson.features.forEach(coordinate => {
+            goodwillsjson.features.forEach(location => {
                 const markee = new mapboxgl.Marker({ color: '#FFC0CB' })
                 storeMarker.current = [...storeMarker.current, markee]
-                markee.setLngLat(coordinate.center).addTo(map.current)
+                markee.setLngLat(location.center).addTo(map.current)
+                markee.getElement().addEventListener('click', () => {
+                    console.log('click')
+                    const popup = new mapboxgl.Popup({
+                        // closeButton: false,
+                        closeOnClick: false,
+                        closeOnMove: true
+                    })
+                        .setLngLat(location.center)
+                        .setHTML(`<p>${location.place_name}</p>`)
+                        .addTo(map.current)
+                })
+                
+                storeInfo.current = [...storeInfo.current, location.place_name]
 
+                
             })
 
-            console.log(storeMarker.current)
 
+
+
+
+
+            // console.log(storeInfo.current)
 
 
             // marker.setLngLat(goodwillsjson.features[0].center).addTo(map.current)
@@ -88,12 +108,31 @@ function Map() {
 
             // const json = await query.json()
             // console.log(json)
+
+            setStoreData(storeInfo.current.map(address => {
+                return (
+                    <p>{address}</p>
+                )
+            }))
         })
 
 
 
 
-    });
+
+
+
+
+
+
+        console.log(storeInfo.current)
+
+
+
+        console.log(storeData)
+
+
+    }, [storeData]);
 
 
 
@@ -105,7 +144,8 @@ function Map() {
                     <p>Test Result Card</p>
                 </div>
                 <div>
-                    <p>Result 1</p>
+                    {/* <div ref={storeData} /> */}
+                    {storeData}
                 </div>
             </div>
         </div>
