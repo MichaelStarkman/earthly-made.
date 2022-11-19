@@ -2,7 +2,7 @@ const ArticleCard = (props) => {
 	return (
 		<div class="article-wrapper-sm">
 			<div class="article-img-sm">
-				<img src={props.article.image} alt="" />
+				<img src={props.article.image} alt="" class="article-img"/>
 			</div>
 			<div class="article-caption-sm d-flex flex-row justify-content-between">
 				<p>{props.article.date}</p>
