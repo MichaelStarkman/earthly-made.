@@ -2,15 +2,24 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
+import LinkContainer from 'react-router-bootstrap/LinkContainer'
+
+
+import hand from '../assets/hand.png'
+import girlOnRock from '../assets/girlOnRock.png'
 
 const MainLinks = () => {
   return (
     <Container>
         <Row>
             <Col className='display-flex flex-direction'>
-                <h2>Introducing a down to earth experience</h2>
+                <br></br>
+                <h2 style={{ 
+                    fontWeight: '600'
+                }}>Introducing a down to earth experience</h2>
                 <h4>Reduce | Recyce | Reuse</h4>
+                <br></br>
             </Col>
         </Row>
         <Row style={{
@@ -22,9 +31,9 @@ const MainLinks = () => {
                         width: "20vw",
                         height: '50vh',
                     }}
-                    src='https://images.unsplash.com/photo-1523995462485-3d171b5c8fa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80' />
+                    src={hand} />
             </Col>
-            <Col  md={{ span: 5, offset: 3 }}>
+            <Col  md={{ span: 4, offset: 3 }}>
                 <div style={{
                     textAlign: 'left',
                     display: 'flex',
@@ -33,17 +42,21 @@ const MainLinks = () => {
                     flexDirection: 'column',
                 }} >
                     
-                    <h3>Sustainable Articles</h3>
+                    <h3  style={{ 
+                    fontWeight: '600'
+                    }}>Sustainable Articles</h3>
                     <p>Read up about all what's happening today and stay up to date with the environment</p>
                     <br></br>
-                    <Button variant="dark">Learn More</Button>
+                    <LinkContainer to={'/articles'}>
+                        <Button variant="dark">Learn More</Button>
+                    </LinkContainer>
                 </div>
             </Col>
         </Row>
         <Row  style={{
             alignItems: 'center',
         }}>
-            <Col  md={5}>
+            <Col  md={4}>
                 <div  style={{
                     textAlign: 'left',
                     display: 'flex',
@@ -51,20 +64,24 @@ const MainLinks = () => {
                     justifyContent: 'center',
                     flexDirection: 'column',
                 }}>
-                    <h3>New Sustainable Brands!!</h3>
+                    <h3  style={{ 
+                    fontWeight: '600'
+                    }}>New Sustainable Brands!!</h3>
                     <p>Check out our selection of new sustainable clothing brands that are transparent and positively impact our society and environment!</p>
                     <br></br>
-                    <Button variant="dark">Learn More</Button>
+                    <LinkContainer to={'/brands'}>
+                        <Button variant="dark">Learn More</Button>                
+                    </LinkContainer>
                 </div>
             </Col>
-            <Col md={{ span: 4, offset: 3 }}>
+            <Col md={{ span: 3, offset: 4 }}>
                 <div>
                     <img 
                         style={{
                             width: "20vw",
                             height: '50vh',
                         }}
-                        src='https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80' />
+                        src={girlOnRock} />
                 </div>
             </Col>
         </Row>
@@ -73,10 +90,12 @@ const MainLinks = () => {
                 <div style={{
                     marginTop: '5em',
                 }}>
-                    <h2>We're in this together!</h2>
-                    <h4>Donate now to help local</h4>
-                    <h4>communities and natural habitats</h4>
-                    <h4>stay afloat</h4>
+                    <h3  style={{ 
+                    fontWeight: '600'
+                    }}>We're in this together!</h3>
+                    <p>Donate now to help local<br></br>
+                    communities and natural habitats<br></br>
+                    stay afloat</p>
                 </div>
             </Col>
         </Row>
