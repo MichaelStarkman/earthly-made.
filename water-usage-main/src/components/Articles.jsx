@@ -21,7 +21,7 @@ const Articles = () => {
 						
 				</div>
 				<br />
-				<div class="row">
+				<div class="row ms-1">
 					<div class="col">
 						{/* Featuerd Articles -- 3 Articles split into two columns */}
 						<FeaturedArticles articles={featuredArticles}/>

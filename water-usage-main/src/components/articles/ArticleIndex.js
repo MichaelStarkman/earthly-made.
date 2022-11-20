@@ -1,3 +1,14 @@
+// This is the list of articles
+// Each Article has:
+				// url - link to article on host site
+				// image - the url for the article image
+				// altText - the alt text for the image
+				// title - the title for the article
+				// summary - a short blurb trimmed for formatting
+				// body - an excerpt from the article
+				// date - publication date(if applicable)
+				// author - author name(if applicable), or outlet name(if no author name)
+
 const ArticleIndex = [
 	{
 		url: 'https://www.thegoodtrade.com/features/fair-trade-clothing',
