@@ -18,7 +18,7 @@ const Articles = () => {
 		<>
 			<div class="container-lg">
 				<div class="row">
-					<div class="col">
+					<div class="col ms-3">
 						{/* Article Page Header */}
 						<ArticlePageTitle />
 					</div>
