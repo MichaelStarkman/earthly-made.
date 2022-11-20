@@ -9,6 +9,13 @@
 				// date - publication date(if applicable)
 				// author - author name(if applicable), or outlet name(if no author name)
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//	NOTICE: The first three articles in the array will be featured
+//	ArticleIndex[0] = Main Article
+//	ArticleIndex[1] = Top Right Article
+//	ArticleIndex[2] = Bottom Right Article
+
 const ArticleIndex = [
 	{
 		url: 'https://www.thegoodtrade.com/features/fair-trade-clothing',

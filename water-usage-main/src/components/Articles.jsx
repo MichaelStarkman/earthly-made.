@@ -1,8 +1,11 @@
 import ArticlePageTitle from "./articles/ArticlePageTitle.jsx"
 import FeaturedArticles from "./articles/FeaturedArticles.jsx"
 import ArticleCarousel from "./articles/ArticleCarousel.jsx"
+
+// this is the array of articles
 import ArticleIndex from "./articles/ArticleIndex.js"
 
+// the first three articles in the array will be the featured articles
 const featuredArticles = {
 	primary: ArticleIndex[0],
 	rightTop: ArticleIndex[1],
