@@ -198,8 +198,7 @@ const testBrands = [
 const cards = testBrands.map((brand, i) => {
   return (
     <div className='fullCard' key={`${brand.name}${i}`}>
-      <BrandCards i={i + 1} brand={brand} />
-      <Shop link={brand.link} />
+      <BrandCards i={i + 1} brand={brand} link={brand.link}/>
     </div>
   )
 })
