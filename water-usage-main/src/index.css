@@ -12,47 +12,7 @@ code {
     monospace;
 }
 
-/* outer mapbox div */
-.outerMapContainer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 30px;
-}
 
-/* mapbox */
-.map-container {
-  height: 50vh;
-  width: 50vw;
-}
-
-/* sidebar div */
-.sidebar {
-  background-color: rgba(35, 55, 75, 0.9);
-  color: #fff;
-  padding: 6px 12px;
-  font-family: monospace;
-  z-index: 1;
-  /* position: absolute;
-  top: 0;
-  left: 0; */
-  margin: 12px;
-  border-radius: 4px;
-}
-
-/* Search Result group div */
-.resultsBox {
-  border-radius: 4px;
-  background-color: rgb(45, 45, 45);
-  display: grid;
-}
-
-/* Individual search result div */
-.resultCard {
-  border-radius: 4px;
-  background-color: #add8e6;
-  margin: 1rem;
-}
 
 /* Donation component div */
 .donation-component {

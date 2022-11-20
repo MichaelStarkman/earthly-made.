@@ -1,9 +1,13 @@
+import '../Map.css'
 import React, { useRef, useEffect, useState } from 'react'
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+
+
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_KEY
+
 
 function Map() {
     const mapContainer = useRef(null);
@@ -11,14 +15,15 @@ function Map() {
     const [lng, setLng] = useState(-113.9);
     const [lat, setLat] = useState(33);
     const [zoom, setZoom] = useState(13);
+    const [show, setShow] = useState(false)
 
 
+    const handleExpand = () => {show ? setShow(false) : setShow(true)}
 
     // const [storeMarker, setStoreMarker] = useState([])
     const storeMarker = useRef([])
     const storeInfo = useRef([])
     const [storeData, setStoreData] = useState([])
-
 
     useEffect(() => {
         if (map.current) return; // initialize map only once
@@ -110,18 +115,18 @@ function Map() {
 
     }, [storeData]);
 
-
+    console.log(storeData)
+    console.log(storeInfo)
 
     return (
         <div className='outerMapContainer'>
             <div ref={mapContainer} className='map-container' />
-            <div className='sidebar'>
-                <div>
-                    <p>Test Result Card</p>
-                </div>
+            <div className={`${storeData.length !== 0 ? 'sidebar' : ''}  ${show ? 'sidebarExpanded' : ''}`}>
                 <div className='resultsBox'>
-                    {storeData}
+                        {storeData}
                 </div>
+                <button className={`${storeData.length !== 0 ? '' : 'hidden'}`} onClick={handleExpand}><u>{show ? 'Show Less' : 'Show More'}</u></button>
+                
             </div>
         </div>
     )
