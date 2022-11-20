@@ -18,7 +18,7 @@ const ArticleCarousel = (props) => {
 
 
 	return (
-		<div id="carousel-ArticlePage" class="carousel slide" data-bs-ride="false">
+		<div id="carousel-ArticlePage" class="carousel slide" data-bs-ride="false" style={{height: 535 }}>
 			{/* <div class="carousel-indicators" >
 				{props.articles.map((article) => {
 					return(
