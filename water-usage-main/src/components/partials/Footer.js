@@ -7,7 +7,7 @@ import Email from './Email';
 
 function FooterComponent() {
   return (
-    <Navbar className='headerFooter' expand="lg">
+    <Navbar className='headerFooter navbar-custom' expand="lg">
       <Container>
           <Nav className="w-100 ">
             <div className='d-flex justify-content-evenly w-100'>
