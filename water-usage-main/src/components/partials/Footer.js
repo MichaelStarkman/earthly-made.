@@ -9,7 +9,7 @@ function FooterComponent() {
   return (
     <Navbar className='headerFooter navbar-custom' expand="lg">
       <Container>
-          <Nav className="w-100 ">
+          <Nav className="w-100">
             <div className='d-flex justify-content-evenly w-100'>
               <p>earthly made.</p>
               <div>
@@ -17,13 +17,13 @@ function FooterComponent() {
               </div>
               <div className='d-flex'>
                 <LinkContainer to={'/contact'}>
-                  <Nav.Link className='p-1' ><u>Contact Us</u></Nav.Link>
+                  <Nav.Link className='p-1' ><u className='link-text'>Contact Us</u></Nav.Link>
                 </LinkContainer>
                 <LinkContainer to={'/socials'}>
-                  <Nav.Link className='p-1' ><u>Socials?</u></Nav.Link>
+                  <Nav.Link className='p-1' ><u className='link-text'>Socials?</u></Nav.Link>
                 </LinkContainer>
                 <LinkContainer to={'/about'}>
-                  <Nav.Link className='p-1' ><u>About Us</u></Nav.Link>
+                  <Nav.Link className='p-1' ><u className='link-text'>About Us</u></Nav.Link>
                 </LinkContainer>
               </div>
             </div>

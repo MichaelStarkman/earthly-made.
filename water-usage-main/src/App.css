@@ -136,4 +136,9 @@
 
 .navbar-custom {
   background-color: #C1A68D !important;
+  color: white;
+}
+
+.link-text {
+  color: white !important;
 }
