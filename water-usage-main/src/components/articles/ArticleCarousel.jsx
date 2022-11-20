@@ -19,7 +19,6 @@ const ArticleCarousel = (props) => {
 
 	return (
 		<div id="carousel-ArticlePage" class="carousel slide" data-bs-ride="false">
-			carousel goes here
 			<div class="carousel-indicators" >
 				{/* map articles to create carousel-indicator with appropriate tags */}
 				{props.articles.map((article) => {
