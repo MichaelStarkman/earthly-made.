@@ -22,12 +22,12 @@ const testArticle2 = {
 	author: "Redress Raleigh"
 }
 
-const FeaturedArticles = () => {
+const FeaturedArticles = (props) => {
 	return (
 		<section>
 			<div class="conatiner-lg">
-				<div class="row row-cols-2">
-					<div class="col col-8 border-end">
+				<div class="row row-cols-2 gx-5">
+					<div class="col col-8">
 						{/* Holds one article */}
 						<MainArticle article={testArticle1}/>
 					</div>
@@ -37,6 +37,8 @@ const FeaturedArticles = () => {
 							<div class="row">
 								<div class="col">
 									<ArticleCard article={testArticle1}/>
+									<br />
+									<br />
 									<br />
 									<ArticleCard article={testArticle2}/>
 								</div>
