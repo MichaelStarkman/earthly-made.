@@ -29,7 +29,7 @@ const ArticleIndex = [
 		body: 'Sustainable fashion (or clothing) uses textiles that are manufactured, constructed, and marketed in a responsible and conscious way that acknowledges and accounts for their environmental and socioeconomic impacts. This is ideally done across a garment’s full life cycle, from creation to disposal. Responsible designers understand that everything they make has influence — from the materials they use to the way they treat the people producing their goods. ',
 		date: " ",
 		author: "Redress Raleigh"
-	},
+	}
 	
 ]
 
