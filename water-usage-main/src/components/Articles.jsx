@@ -33,23 +33,20 @@ const Articles = () => {
 				</div>
 				<br />
 				<div class="row" >
-					<div class="col border-bottom border-3 border-dark" >
+					<div class="col border-bottom border-3 border-dark mb-4" >
 						<div class="fs-4">Topics</div>
 					</div>
 				</div>
-				<br />
-				<div class="row" style={{height: "400px"}} >
-					<div class="col">
-						<div class="fs-2 border-bottom border-dark mb-4">Water Usage</div>
-						<div class="row">
+				<div class="row">
+					<div class="col fs-2 border-bottom border-2 border-secondary mb-4"> Water Conservation</div>
+				</div>
+				
+						{/* <div class="row">
 							<div class="col">
-								{/* Carousel will loop through array of all articles */}
+								Carousel will loop through array of all articles
 								<ArticleCarousel articles={ArticleIndex}/>
 							</div>
-						</div>
-						
-					</div>
-				</div>
+						</div> */}
 			</div>
 			
 		</>

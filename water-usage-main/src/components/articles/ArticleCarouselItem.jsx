@@ -1,3 +1,6 @@
+// updating this section to match the hi-fi
+// will have three items per carousel page
+
 const ArticleCarouselItem = (props) => {
 	return (
 		<>
