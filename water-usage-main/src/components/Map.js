@@ -111,18 +111,12 @@ function Map() {
 
             setStoreData(storeInfo.current.map(address => {
                 return (
-                    <p>{address}</p>
+                    <div className='resultCard'>
+                        <p>{address}</p>
+                    </div>
                 )
             }))
         })
-
-
-
-
-
-
-
-
 
 
         console.log(storeInfo.current)
@@ -143,8 +137,7 @@ function Map() {
                 <div>
                     <p>Test Result Card</p>
                 </div>
-                <div>
-                    {/* <div ref={storeData} /> */}
+                <div className='resultsBox'>
                     {storeData}
                 </div>
             </div>

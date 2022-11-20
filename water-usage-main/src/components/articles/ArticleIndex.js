@@ -30,6 +30,7 @@ const ArticleIndex = [
 		date: " ",
 		author: "Redress Raleigh"
 	}
+
 	
 ]
 
