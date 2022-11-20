@@ -1,0 +1,72 @@
+/* outer mapbox div */
+.outerMapContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  
+  /* mapbox */
+  .map-container {
+    height: 50vh;
+    width: 50vw;
+  }
+  
+  /* sidebar div */
+  .sidebar, .sidebarExpanded {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(35, 55, 75, 0.9);
+    color: #fff;
+    padding: 6px 12px;
+    font-family: monospace;
+    z-index: 1;
+    width: 50vw;
+    height: 11rem;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    margin: 12px;
+    border-radius: 4px;
+  }
+
+
+  .sidebarExpanded {
+    height: fit-content;
+  }
+
+  .sidebar button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 12px;
+  }
+  
+  /* Search Result group div */
+  .resultsBox {
+    border-radius: 4px;
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-height: 100%;
+    overflow: hidden;
+    /* grid-template-columns: repeat(2, fr); */
+    /* grid-template-rows: 1; */
+    
+  }
+  
+  /* Individual search result div */
+  .resultCard {
+    width: 45%;
+    border-radius: 4px;
+    background-color: #add8e6;
+    grid-column: span 1;
+    margin: 1rem;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
