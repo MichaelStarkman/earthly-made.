@@ -9,8 +9,8 @@ import ArticleIndex from "./articles/ArticleIndex.js"
 // the first three articles in the array will be the featured articles
 const featuredArticles = {
 	primary: ArticleIndex[0],
-	rightTop: ArticleIndex[0],
-	rightBottom: ArticleIndex[1]
+	rightTop: ArticleIndex[1],
+	rightBottom: ArticleIndex[2]
 }
 
 const Articles = () => {

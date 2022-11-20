@@ -6,7 +6,7 @@ const FeaturedArticles = (props) => {
 		<section>
 			<div class="conatiner-lg">
 				<div class="row row-cols-2">
-					<div class="col col-8 border-end">
+					<div class="col col-8">
 						{/* Holds one article */}
 						<MainArticle article={props.articles.primary}/>
 					</div>
