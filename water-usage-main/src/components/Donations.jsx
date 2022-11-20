@@ -5,18 +5,13 @@ export default function Donations() {
         <div className='container mx-auto my-5 rounded' style={{ backgroundColor: '#aecBd6' }}>
             <div className='row py-4'>
 
-                <div className='col-5'>
-                    <h3>We want to be real with you</h3>
-                    <p>These are vetted, global environmental charities that accept no corporate or government donations so they can maintain a much needed independent voice, but it means they rely on individual supporters like you to fund work. By making a much needed donation you are helping investigate, campaign, document and lobby for a sustainable balance between humans and the environment.</p>
+                <div className='col-6 py-4' style={{backgroundColor: '#5D7E98'}}>
+                    <h3 >We want to be real with you</h3>
+                    <p className='py-5'>These are vetted, global environmental charities that accept no corporate or government donations so they can maintain a much needed independent voice, but it means they rely on individual supporters like you to fund work. By making a much needed donation you are helping investigate, campaign, document and lobby for a sustainable balance between humans and the environment.</p>
                     <p>Your support means the world.</p>
                 </div>
-                <div className='col'>
-                    |
-                </div>
 
-
-
-                <div className='col-6'>
+                <div className='col-6 py-4' style={{backgroundColor: '#7C9670'}} >
                     <h3>Support a charity today!</h3>
                     <div className='container'>
 
