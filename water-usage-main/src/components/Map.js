@@ -49,8 +49,6 @@ function Map() {
 
             // console.log(event)
 
-            // marker setting for search result
-
             // sets a marker on the search result location
             marker.setLngLat(point).addTo(map.current);
 
@@ -58,25 +56,20 @@ function Map() {
             storeMarker.current = []
             storeInfo.current = []
 
-            // console.log(point)
 
             // searches goodwills near area with a bordered box of .2 difference
             const goodwills = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/thrift+store.json?limit=20&bbox=${point[0] - .2}%2C${point[1] - .2}%2C${point[0] + .2}%2C${point[1] + .2}&proximity=${point[0]}%2C${point[1]}&types=poi&access_token=${mapboxgl.accessToken}`, { method: 'GET' })
             const goodwillsjson = await goodwills.json()
-            // console.log(goodwillsjson)
-
-            // sets markers for each goodwill
-            // goodwillsjson.features.map(coordinate => {
-            //     const marker = new mapboxgl.Marker({ color:'#008005' })
-            //     return (
-            //         marker.setLngLat(coordinate.center).addTo(map.current)
-            //     )
-            // })
+            console.log(goodwillsjson)
 
             goodwillsjson.features.forEach(location => {
                 const markee = new mapboxgl.Marker({ color: '#FFC0CB' })
                 storeMarker.current = [...storeMarker.current, markee]
                 markee.setLngLat(location.center).addTo(map.current)
+                // const regexTitle = /^([^,])+/g.match(location.place_name)
+                const regexTitle = location.place_name.match(/^([^,])+/g).toString()
+                const stringAddress = location.place_name.substring(location.place_name.indexOf(',') + 2)
+
                 markee.getElement().addEventListener('click', () => {
                     console.log('click')
                     const popup = new mapboxgl.Popup({
@@ -85,45 +78,34 @@ function Map() {
                         closeOnMove: true
                     })
                         .setLngLat(location.center)
-                        .setHTML(`<p>${location.place_name}</p>`)
+                        .setHTML(`
+                            <p>${regexTitle}</p>
+                            <p>${stringAddress}</p>
+                        `)
                         .addTo(map.current)
                 })
                 
-                storeInfo.current = [...storeInfo.current, location.place_name]
-
-                
+                // storeInfo.current = [...storeInfo.current, location.place_name]
+                storeInfo.current = [...storeInfo.current, [regexTitle, stringAddress]]
             })
 
-
-
-
-
-
-            // console.log(storeInfo.current)
-
-
-            // marker.setLngLat(goodwillsjson.features[0].center).addTo(map.current)
-
-            // const query = await fetch(`https://api.mapbox.com/v5/${goodwillsjson}/tilequery/${point[0]},${point[1]}.json?radius=${radius}&limit=${limit}&access_token=${mapboxgl.accessToken}`, { method: 'GET' });
-
-            // const json = await query.json()
-            // console.log(json)
 
             setStoreData(storeInfo.current.map(address => {
                 return (
                     <div className='resultCard'>
-                        <p>{address}</p>
+                        <p className='text-dark'>{address[0]}</p>
+                        <p className='text-dark'>{address[1]}</p>
                     </div>
                 )
             }))
         })
 
 
-        console.log(storeInfo.current)
+        // console.log(storeInfo.current)
 
 
 
-        console.log(storeData)
+        // console.log(storeData)
 
 
     }, [storeData]);
