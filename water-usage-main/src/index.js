@@ -4,10 +4,10 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import App from './App';
-import NavbarComponent from './components/Navbar';
+import NavbarComponent from './components/partials/Navbar';
 import About from './components/About.js';
-import FooterComponent from './components/Footer';
-import Header from './components/Header';
+import FooterComponent from './components/partials/Footer';
+import Header from './components/partials/Header';
 import Articles from './components/Articles';
 import Brands from './components/brands/Brands';
 
