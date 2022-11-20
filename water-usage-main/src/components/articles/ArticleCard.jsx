@@ -1,6 +1,6 @@
 const ArticleCard = (props) => {
 	return (
-		<div class="container shadow-sm p-0">
+		<div class="container p-0">
 			<div class="row">
 				<div class="col">
 					<img src={props.article.image} alt="" class="img-fluid mx-auto d-block"/>
