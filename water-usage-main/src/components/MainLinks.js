@@ -10,7 +10,7 @@ const MainLinks = () => {
         <Row>
             <Col className='display-flex flex-direction'>
                 <h2>Introducing a down to earth experience</h2>
-                <h3>Reduce | Recyce | Reuse</h3>
+                <h4>Reduce | Recyce | Reuse</h4>
             </Col>
         </Row>
         <Row style={{
@@ -19,12 +19,12 @@ const MainLinks = () => {
             <Col md={4}>
                 <img 
                     style={{
-                        width: "22vw",
-                        height: '44vh',
+                        width: "20vw",
+                        height: '50vh',
                     }}
                     src='https://images.unsplash.com/photo-1523995462485-3d171b5c8fa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80' />
             </Col>
-            <Col  md={{ span: 6, offset: 2 }}>
+            <Col  md={{ span: 5, offset: 3 }}>
                 <div style={{
                     textAlign: 'left',
                     display: 'flex',
@@ -34,7 +34,8 @@ const MainLinks = () => {
                 }} >
                     
                     <h3>Sustainable Articles</h3>
-                    <h4>Read up about all what's happening today and stay up to date with the environment</h4>
+                    <p>Read up about all what's happening today and stay up to date with the environment</p>
+                    <br></br>
                     <Button variant="dark">Learn More</Button>
                 </div>
             </Col>
@@ -42,7 +43,7 @@ const MainLinks = () => {
         <Row  style={{
             alignItems: 'center',
         }}>
-            <Col  md={4}>
+            <Col  md={5}>
                 <div  style={{
                     textAlign: 'left',
                     display: 'flex',
@@ -51,16 +52,17 @@ const MainLinks = () => {
                     flexDirection: 'column',
                 }}>
                     <h3>New Sustainable Brands!!</h3>
-                    <h4>Check out our currated list of sustainable brands that are making a difference!</h4>
+                    <p>Check out our selection of new sustainable clothing brands that are transparent and positively impact our society and environment!</p>
+                    <br></br>
                     <Button variant="dark">Learn More</Button>
                 </div>
             </Col>
-            <Col md={{ span: 6, offset: 2 }}>
+            <Col md={{ span: 4, offset: 3 }}>
                 <div>
                     <img 
                         style={{
-                            width: "22vw",
-                            height: '44vh',
+                            width: "20vw",
+                            height: '50vh',
                         }}
                         src='https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80' />
                 </div>
