@@ -19,7 +19,7 @@
 .cta {    
     padding: 10px;
     margin-bottom: 30px;
-    background-color: rgb(245, 238, 168);
+    background-color: rgb(212, 212, 212);
     border-radius: 10px;
     width: 900px;
 }
@@ -55,7 +55,7 @@
 
 
 .brandCard {
-    background-color: rgb(215, 215, 215);
+    /* background-color: rgb(215, 215, 215); */
     /* margin-top: 50px; */
     margin-bottom: 30px;
     width: 900px;
@@ -73,7 +73,7 @@
 }
 
 .brandImgContainer {
-    background-color: rgb(150, 150, 150);
+    /* background-color: rgb(150, 150, 150); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,5 +109,13 @@
     justify-content: center;
 }
 
+.right {
+    background-color: rgb(212, 212, 212);
+}
 
+.left {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row-reverse;
+}
 

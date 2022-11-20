@@ -3,12 +3,12 @@ import '../../Brand.css'
 
 const BrandCards = (props) => {
   return (
-    <div className='brandCard container'>
-        <div className='row'>
+    <div className={`brandCard container`}>
+        <div className={`row  ${props.i % 2 ===0? 'right' : 'left'} `}>
             <div className='col'>
                 <div className='brandContainer'>
                     <h1>
-                        {props.i}. {props.brand.name}
+                        {props.brand.name}
                     </h1>
                 </div>
                 <div className='brandCardAbout'>
