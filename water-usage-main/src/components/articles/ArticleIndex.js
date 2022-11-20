@@ -37,8 +37,6 @@ const ArticleIndex = [
 		date: " ",
 		author: "Redress Raleigh"
 	}
-
-	
 ]
 
 export default ArticleIndex
