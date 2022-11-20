@@ -26,7 +26,7 @@ code {
   width: 50vw;
 }
 
-/* part of mapbox */
+/* sidebar div */
 .sidebar {
   background-color: rgba(35, 55, 75, 0.9);
   color: #fff;
@@ -38,4 +38,37 @@ code {
   left: 0; */
   margin: 12px;
   border-radius: 4px;
-  }
+}
+
+/* Search Result group div */
+.resultsBox {
+  border-radius: 4px;
+  background-color: rgb(45, 45, 45);
+  display: grid;
+}
+
+/* Individual search result div */
+.resultCard {
+  border-radius: 4px;
+  background-color: #add8e6;
+  margin: 1rem;
+}
+
+/* Donation component div */
+.donation-component {
+  background-color:rgba(35, 55, 75, 0.9);
+  margin: 5vh 10vw;
+  display: grid;
+}
+
+.charity {
+  background-color: aliceblue;
+}
+
+/* Donation Images */
+.donation-image {
+  
+  max-height: 150px;
+  max-width: 150px;
+
+}
