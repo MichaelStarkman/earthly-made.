@@ -12,7 +12,7 @@ const ArticleCarouselCard = (props) => {
 						Some quick example text to build on the card title and make up the
 						bulk of the card's content.
 					</Card.Text>
-					<Button variant="primary">Go somewhere</Button>
+					<Button variant="dark" class="border border-0 rounded-0 btn btn-dark">Go somewhere</Button>
 				</Card.Body>
 			</Card>
 		</div>

@@ -13,7 +13,7 @@ const MainArticle = (props) => {
 					</div>
 					<div class="article-btn">
 						<a href={props.article.url}>
-							<button type="button" class="btn btn-dark">Read Full Article</button>
+							<button type="button" class="btn btn-dark border border-0 rounded-0">Read Full Article</button>
 						</a>
 					</div>
 				</div>
