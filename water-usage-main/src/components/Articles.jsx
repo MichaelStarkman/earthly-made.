@@ -32,11 +32,13 @@ const Articles = () => {
 					</div>
 				</div>
 				<br />
-				<div class="row">
+				<div class="row" style={{height: "400px"}} >
+					<div class="col"></div>
 					<div class="col col-10">
 						{/* Carousel will loop through array of all articles */}
 						<ArticleCarousel articles={ArticleIndex}/>
 					</div>
+					<div class="col"></div>
 				</div>
 			</div>
 			
