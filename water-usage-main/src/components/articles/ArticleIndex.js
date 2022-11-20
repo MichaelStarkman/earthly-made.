@@ -9,6 +9,13 @@
 				// date - publication date(if applicable)
 				// author - author name(if applicable), or outlet name(if no author name)
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//	NOTICE: The first three articles in the array will be featured
+//	ArticleIndex[0] = Main Article
+//	ArticleIndex[1] = Top Right Article
+//	ArticleIndex[2] = Bottom Right Article
+
 const ArticleIndex = [
 	{
 		url: 'https://www.thegoodtrade.com/features/fair-trade-clothing',
@@ -29,9 +36,17 @@ const ArticleIndex = [
 		body: 'Sustainable fashion (or clothing) uses textiles that are manufactured, constructed, and marketed in a responsible and conscious way that acknowledges and accounts for their environmental and socioeconomic impacts. This is ideally done across a garment’s full life cycle, from creation to disposal. Responsible designers understand that everything they make has influence — from the materials they use to the way they treat the people producing their goods. ',
 		date: " ",
 		author: "Redress Raleigh"
+	},
+	{
+		url: 'https://www.oxfordstudent.com/2022/11/09/can-fast-fashion-be-made-sustainable/',
+		image: 'https://www.oxfordstudent.com/wp-content/uploads/2022/11/Fast-fashion-article_without-banner.png',
+		altText: 'woman in red with bags',
+		title: 'Can fast fashion be made sustainable?',
+		summary: "How the failure of plastics recycling casts doubt on fashion's dream of a circular economy",
+		body: 'The modern fashion industry is complicated. It relies on both political and economic processes that enable globalised supply chains and on human psychology, which drives us to desire new clothing on a regular basis. The industry is environmentally damaging in almost every possible way, on top of being notorious for greenwashing. There is a vague vision of building a circular economy, which aims to reuse and recycle existing products as long as possible, but upon closer inspection, this model bears strong resemblance to the failed project of plastic recycling.',
+		date: "11/9/2022",
+		author: "Christian McIntosh"
 	}
-
-	
 ]
 
 export default ArticleIndex

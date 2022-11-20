@@ -1,8 +1,12 @@
+
 import ArticlePageTitle from "./articles/ArticlePageTitle.jsx"
 import FeaturedArticles from "./articles/FeaturedArticles.jsx"
 import ArticleCarousel from "./articles/ArticleCarousel.jsx"
+
+// this is the array of articles
 import ArticleIndex from "./articles/ArticleIndex.js"
 
+// the first three articles in the array will be the featured articles
 const featuredArticles = {
 	primary: ArticleIndex[0],
 	rightTop: ArticleIndex[1],
@@ -28,11 +32,13 @@ const Articles = () => {
 					</div>
 				</div>
 				<br />
-				<div class="row">
+				<div class="row" style={{height: "400px"}} >
+					<div class="col"></div>
 					<div class="col col-10">
 						{/* Carousel will loop through array of all articles */}
-						<ArticleCarousel />
+						<ArticleCarousel articles={ArticleIndex}/>
 					</div>
+					<div class="col"></div>
 				</div>
 			</div>
 			
