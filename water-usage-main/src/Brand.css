@@ -1,0 +1,113 @@
+.brandPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.opening {
+    width: 960px;    
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.opening h1 {
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.cta {    
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: rgb(215, 215, 215);
+    border-radius: 10px;
+    width: 900px;
+}
+
+.filterBar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: rgb(215, 215, 215);
+}
+
+/* card components */
+
+.fullCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.shopButton, .shopButton a {
+    background-color: rgb(130, 130, 130);
+    padding: 20px 60px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.brandCard {
+    background-color: rgb(215, 215, 215);
+    /* margin-top: 50px; */
+    margin-bottom: 30px;
+    width: 900px;
+    max-height: 500px;
+}
+
+.brandCardAbout {
+    width: 500px;
+    height: 150px;
+}
+
+.brandCardBlurb {
+    width: 500px;
+    height: 200px;
+}
+
+.brandImgContainer {
+    background-color: rgb(150, 150, 150);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brandCardImage {
+    
+    height: fit-content;
+    max-width: 300px;
+    max-height: 300px;
+    
+}
+
+.brand button {
+    padding: 10px 60px;
+    background-color: brown;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 40px;
+    border: none;
+}
+
+.brand a {
+    text-decoration: none;
+    color: white;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
