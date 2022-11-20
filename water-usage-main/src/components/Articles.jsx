@@ -41,12 +41,12 @@ const Articles = () => {
 					<div class="col fs-2 border-bottom border-2 border-secondary mb-4"> Water Conservation</div>
 				</div>
 				
-						{/* <div class="row">
+						<div class="row">
 							<div class="col">
-								Carousel will loop through array of all articles
+								{/* Carousel will loop through array of all articles */}
 								<ArticleCarousel articles={ArticleIndex}/>
 							</div>
-						</div> */}
+						</div>
 			</div>
 			
 		</>

@@ -19,14 +19,13 @@ const ArticleCarousel = (props) => {
 
 	return (
 		<div id="carousel-ArticlePage" class="carousel slide" data-bs-ride="false">
-			<div class="carousel-indicators" >
-				{/* map articles to create carousel-indicator with appropriate tags */}
+			{/* <div class="carousel-indicators" >
 				{props.articles.map((article) => {
 					return(
 						<ArticleCarouselIndicator index={props.articles.indexOf(article)} ariaLabel={`Slide ${props.articles.indexOf(article) + 1}`} />
 					)
 				})}
-			</div>
+			</div> */}
 			<div class="carousel-inner" >
 				{props.articles.map((article) => {
 					return <ArticleCarouselItem index={props.articles.indexOf(article)} article={article}/>
