@@ -29,7 +29,9 @@ const ArticleCarousel = (props) => {
 				})}
 			</div>
 			<div class="carousel-inner" >
-
+				{props.articles.map((article) => {
+					return <ArticleCarouselItem index={props.articles.indexOf(article)} article={article}/>
+				})}
 			</div>
 			
 		</div>
