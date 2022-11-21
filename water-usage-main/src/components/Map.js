@@ -71,14 +71,12 @@ function Map() {
                 const markee = new mapboxgl.Marker({ color: '#FFC0CB' })
                 storeMarker.current = [...storeMarker.current, markee]
                 markee.setLngLat(location.center).addTo(map.current)
-                // const regexTitle = /^([^,])+/g.match(location.place_name)
                 const regexTitle = location.place_name.match(/^([^,])+/g).toString()
                 const stringAddress = location.place_name.substring(location.place_name.indexOf(',') + 2)
 
                 markee.getElement().addEventListener('click', () => {
                     console.log('click')
                     const popup = new mapboxgl.Popup({
-                        // closeButton: false,
                         closeOnClick: false,
                         closeOnMove: true
                     })
@@ -98,7 +96,7 @@ function Map() {
             setStoreData(storeInfo.current.map(address => {
                 return (
                     <div className='resultCard'>
-                        <p className='text-dark'>{address[0]}</p>
+                        <p className='text-dark fw-semibold'>{address[0]}</p>
                         <p className='text-dark'>{address[1]}</p>
                     </div>
                 )
