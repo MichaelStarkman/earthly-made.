@@ -50,17 +50,17 @@ const ArticleIndex = [
 		author: "Christian McIntosh",
 		category: ['energy', 'recycle', 'feature']
 	},
-	{
-		url: 'https://www.google.com/search?q=sustainable+fashion&sxsrf=ALiCzsYIN4C9rwQnxEwjWGrAIAwdlLxigA%3A1668964026176&ei=ul56Y7ykCuKh5NoPwcWqqA4&ved=0ahUKEwi86bC_n737AhXiEFkFHcGiCuUQ4dUDCBE&uact=5&oq=sustainable+fashion&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQgAQQsQMyCwgAEIAEELEDEMkDMgsILhCABBDHARCvATIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEEcQ1gQQsAM6BAgjECc6BQgAEJECOgQIABBDOg4ILhCABBCxAxDHARDRAzoLCAAQgAQQsQMQgwE6BAguEEM6DggAEIAEELEDEIMBEMkDOgcILhDUAhBDOgcIABCxAxBDOgsILhCABBDHARDRA0oECEEYAEoECEYYAFD-CFi3JGDnJWgDcAF4AYABowGIAf8LkgEEMTcuMpgBAKABAcgBCMABAQ&sclient=gws-wiz-serp',
-		image: 'https://images.unsplash.com/photo-1637852117014-7bb636c87a59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fGVudmlyb25tZW50YWwlMjBwcm90ZWN0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-		altText: 'woman in red with bags',
-		title: 'Can fast fashion be made sustainable?',
-		summary: "How the failure of plastics recycling casts doubt on fashion's dream of a circular economy",
-		body: 'The modern fashion industry is complicated. It relies on both political and economic processes that enable globalised supply chains and on human psychology, which drives us to desire new clothing on a regular basis. The industry is environmentally damaging in almost every possible way, on top of being notorious for greenwashing. There is a vague vision of building a circular economy, which aims to reuse and recycle existing products as long as possible, but upon closer inspection, this model bears strong resemblance to the failed project of plastic recycling.',
-		date: "11/9/2022",
-		author: "Christian McIntosh",
-		category: ['water', 'recycle']
-	},
+	// {
+	// 	url: 'https://www.google.com/search?q=sustainable+fashion&sxsrf=ALiCzsYIN4C9rwQnxEwjWGrAIAwdlLxigA%3A1668964026176&ei=ul56Y7ykCuKh5NoPwcWqqA4&ved=0ahUKEwi86bC_n737AhXiEFkFHcGiCuUQ4dUDCBE&uact=5&oq=sustainable+fashion&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQgAQQsQMyCwgAEIAEELEDEMkDMgsILhCABBDHARCvATIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEEcQ1gQQsAM6BAgjECc6BQgAEJECOgQIABBDOg4ILhCABBCxAxDHARDRAzoLCAAQgAQQsQMQgwE6BAguEEM6DggAEIAEELEDEIMBEMkDOgcILhDUAhBDOgcIABCxAxBDOgsILhCABBDHARDRA0oECEEYAEoECEYYAFD-CFi3JGDnJWgDcAF4AYABowGIAf8LkgEEMTcuMpgBAKABAcgBCMABAQ&sclient=gws-wiz-serp',
+	// 	image: 'https://images.unsplash.com/photo-1637852117014-7bb636c87a59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fGVudmlyb25tZW50YWwlMjBwcm90ZWN0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+	// 	altText: 'woman in red with bags',
+	// 	title: 'Can fast fashion be made sustainable?',
+	// 	summary: "How the failure of plastics recycling casts doubt on fashion's dream of a circular economy",
+	// 	body: 'The modern fashion industry is complicated. It relies on both political and economic processes that enable globalised supply chains and on human psychology, which drives us to desire new clothing on a regular basis. The industry is environmentally damaging in almost every possible way, on top of being notorious for greenwashing. There is a vague vision of building a circular economy, which aims to reuse and recycle existing products as long as possible, but upon closer inspection, this model bears strong resemblance to the failed project of plastic recycling.',
+	// 	date: "11/9/2022",
+	// 	author: "Christian McIntosh",
+	// 	category: ['water', 'recycle']
+	// },
 	{
 		url: 'https://www.google.com/search?q=sustainable+fashion&sxsrf=ALiCzsYIN4C9rwQnxEwjWGrAIAwdlLxigA%3A1668964026176&ei=ul56Y7ykCuKh5NoPwcWqqA4&ved=0ahUKEwi86bC_n737AhXiEFkFHcGiCuUQ4dUDCBE&uact=5&oq=sustainable+fashion&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQgAQQsQMyCwgAEIAEELEDEMkDMgsILhCABBDHARCvATIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEEcQ1gQQsAM6BAgjECc6BQgAEJECOgQIABBDOg4ILhCABBCxAxDHARDRAzoLCAAQgAQQsQMQgwE6BAguEEM6DggAEIAEELEDEIMBEMkDOgcILhDUAhBDOgcIABCxAxBDOgsILhCABBDHARDRA0oECEEYAEoECEYYAFD-CFi3JGDnJWgDcAF4AYABowGIAf8LkgEEMTcuMpgBAKABAcgBCMABAQ&sclient=gws-wiz-serp',
 		image:	'https://plus.unsplash.com/premium_photo-1663045962823-0843412e0289?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTU3fHxlbnZpcm9ubWVudGFsJTIwcHJvdGVjdGlvbnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60',
