@@ -4,8 +4,7 @@ eartly made. provides the user with resources to become a more sustainable fashi
 
 ## Approach
 
-[insert approach to how we thought of the concept and how we wanted to implement our concept]
-
+With the prompt of 'environmental sustainability', our minds were led towards sustainable fashion. We set out to create a project that centered around finding thrift stores and informing the user with articles that focused on information about sustainable fashion. Furthermore, we wanted to have a page of brands that would allow the user to see what clothing companies they should focus on. With these things in mind, we settled on the Mapbox API to implement a thrift store search functionality. Furthermore, the UX team was able to give us multiple mock-ups for us to build our site upon.
 
 ## Technologies Used
 
@@ -13,6 +12,8 @@ JavaScript
 React
 React Bootstraps
 React Router
+MapBox API
+BootStrap CSS
 
 ## ERD
 
@@ -38,6 +39,7 @@ As a user, I want to be able to learn about sustainable fashion, being able to l
 
 ## Post-Reflection
 
+Our team is proud of the content we were able to fit in within the 6-day time limit we were given within the hackathon event. We had hardships in certain areas such as creating the mapbox interface and the carousel for the articles page, but overall we were happy with our product. Going into the future, we would like to fully implement the carousel functionality for the articles page as well as implementing a backend database to store articles and map information for updating purposes and API optimization.
 
 
 ## Future Features
