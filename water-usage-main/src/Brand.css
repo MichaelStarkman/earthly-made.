@@ -17,7 +17,7 @@
     padding-top: 50px;
     align-items: center;
     width: 80vw;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 60px);
 }
 
 .openHead {

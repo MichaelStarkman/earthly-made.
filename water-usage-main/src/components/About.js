@@ -22,7 +22,7 @@ const programmers = [
   {
       name: 'Sebastian Manion',
       url: 'https://media-exp1.licdn.com/dms/image/C5603AQFKVY3ljseKuQ/profile-displayphoto-shrink_800_800/0/1660083494530?e=1671667200&v=beta&t=v-Znxg-d_QXgopWPvjNme3ivOvzE_3ezREUD5R0F0j0',
-      blurb: 'I am a web developer from Seattle Washington, I love rainy days, and puzzles. if you want to get to get into contact with me feel free to connect with me on Linkedin.',
+      blurb: 'I am a web developer from Seattle Washington, I love rainy days, and puzzles. My passion is accessibility, and making products that are for everyone. If you want to get to get into contact with me feel free to connect with me on Linkedin.',
       github: 'https://github.com/Manion-sebastian',
       linkedin: 'https://www.linkedin.com/in/sebastianmanion/',
       portfolio: 'https://sebastian-manion.vercel.app/'
