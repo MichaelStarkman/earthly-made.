@@ -67,7 +67,7 @@ const Articles = () => {
 				<div class="row ms-1">
 					<div class="col">
 						{/* Featuerd Articles -- 3 Articles split into two columns */}
-						<FeaturedArticles articles={featureArts}/>
+						{/* <FeaturedArticles articles={featureArts}/> */}
 					</div>
 				</div>
 				<br />
@@ -82,7 +82,7 @@ const Articles = () => {
 				<div class="row">
 					<div class="col">
 						{/* Carousel will loop through array of all articles in the water category*/}
-						<ArticleCarousel articles={waterArts} category="water"/>
+						<ArticleCarousel articles={waterArts} category="water" numItems={Math.floor(waterArts.length / 3)}/>
 					</div>
 				</div>
 			</div>
