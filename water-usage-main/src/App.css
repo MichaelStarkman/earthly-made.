@@ -142,3 +142,28 @@
 .link-text {
   color: white !important;
 }
+
+.hero-container {
+  background-image:  url('https://i.imgur.com/iFaOLQW.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 80vh;
+  width: 100vw; 
+}
+
+.hero-text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4em;
+}
+
+.hero-text-main {
+  font-size: 12vw;
+  background: -webkit-linear-gradient(#004270, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
