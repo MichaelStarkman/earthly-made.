@@ -4,7 +4,7 @@ import Shop from './Shop'
 
 const BrandCards = (props) => {
   return (
-    <div className='container cardSet'>
+    <div className='container'>
         <div className={`row  ${props.i % 2 ===0? 'right' : 'left'} `}>
             <div className='brandImgContainer col-md'>
                 {console.log(Object.values(props.brand.image))}
@@ -25,7 +25,9 @@ const BrandCards = (props) => {
                     <div className='brandCardBlurb'>
                         <p><u>{props.brand.name}</u>, {props.brand.blurb}</p>
                     </div>
-                    <Shop link={props.link} />
+                    <div id='shop'>
+                        <Shop link={props.link} />
+                    </div>
                 </div>
             </div>
         </div>
