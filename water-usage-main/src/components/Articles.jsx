@@ -8,7 +8,6 @@ import ArticleCarousel from "./articles/ArticleCarousel.jsx"
 
 // this is the array of articles
 import ArticleIndex from "./articles/ArticleIndex.js"
-import { set } from "mongoose"
 
 // the first three articles in the array will be the featured articles
 // const featuredArticles = {
