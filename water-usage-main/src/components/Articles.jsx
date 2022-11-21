@@ -8,6 +8,7 @@ import ArticleCarousel from "./articles/ArticleCarousel.jsx"
 
 // this is the array of articles
 import ArticleIndex from "./articles/ArticleIndex.js"
+import { set } from "mongoose"
 
 // the first three articles in the array will be the featured articles
 // const featuredArticles = {
@@ -19,17 +20,20 @@ import ArticleIndex from "./articles/ArticleIndex.js"
 
 const Articles = () => {
 
+	const [allArticles, setAllArticles] = useState([...ArticleIndex])
 	const [waterArts, setWaterArts] = useState([]);
 	const [energyArts, setEnergyArts] = useState([]);
 	const [recycleArts, setRecycleArts] = useState([]);
 	const [featureArts, setFeatureArts] = useState([]);
+	const [sorted, setSorted] = useState(false)
 
-	const categorySort = () => {
+	const sortArticles = () => {
+		setAllArticles([...ArticleIndex])
 		let waterArr = []
 		let energyArr = []
 		let recycleArr = []
 		let featureArr = []
-		ArticleIndex.forEach((article) => {
+		allArticles.forEach((article) => {
 			if (article.category.includes("water")) {
 				waterArr.push(article)
 			}
@@ -47,14 +51,39 @@ const Articles = () => {
 		setEnergyArts(...[energyArr])
 		setRecycleArts(...[recycleArr])
 		setFeatureArts(...[featureArr])
+		setSorted(true)
 	}
 
 	useEffect(() => {
-		categorySort()
+		setAllArticles([...ArticleIndex])
+		let waterArr = []
+		let energyArr = []
+		let recycleArr = []
+		let featureArr = []
+		allArticles.forEach((article) => {
+			if (article.category.includes("water")) {
+				waterArr.push(article)
+			}
+			if (article.category.includes('energy')) {
+				energyArr.push(article)
+			}
+			if (article.category.includes("recycle")) {
+				recycleArr.push(article)
+			}
+			if (article.category.includes("feature")) {
+				featureArr.push(article)
+			}
+		})
+		setWaterArts(...[waterArr])
+		setEnergyArts(...[energyArr])
+		setRecycleArts(...[recycleArr])
+		setFeatureArts(...[featureArr])
+		setSorted(true)
 	}, [])
 
 	return (
 		<>
+			{!sorted ? sortArticles() : null }
 			<div class="container-lg">
 				<div class="row">
 					<div class="col ms-3">
@@ -67,7 +96,7 @@ const Articles = () => {
 				<div class="row ms-1">
 					<div class="col">
 						{/* Featuerd Articles -- 3 Articles split into two columns */}
-						<FeaturedArticles articles={featureArts}/>
+						{/* <FeaturedArticles articles={featureArts}/> */}
 					</div>
 				</div>
 				<br />
@@ -76,14 +105,44 @@ const Articles = () => {
 						<div class="fs-4">Topics</div>
 					</div>
 				</div>
+
+				{/* Water Category Carousel*/}
 				<div class="row">
-					<div class="col fs-2 border-bottom border-2 border-secondary mb-4"> Water Conservation</div>
+					<div class="col fs-2 border-bottom border-1 border-secondary mb-4"> Water Conservation </div>
 				</div>
 				<div class="row">
 					<div class="col">
-						{/* Carousel will loop through array of all articles in the water category*/}
 						<ArticleCarousel articles={waterArts} category="water"/>
 					</div>
+				</div>
+				<div class="row">
+					<div class="col fs-2 border-bottom border-2 border-secondary mb-4"></div>
+				</div>
+
+				{/* Energy Category Carousel*/} 
+				<div class="row">
+					<div class="col fs-2 border-bottom border-1 border-secondary mb-4"> Energy Saving </div>
+				</div>
+				<div class="row">
+					<div class="col">
+						{/* <ArticleCarousel articles={energyArts} category="energy"/> */}
+					</div>
+				</div>
+				<div class="row">
+					<div class="col fs-2 border-bottom border-2 border-secondary mb-4"></div>
+				</div>
+
+				{/* Recycle Category Carousel*/}
+				<div class="row">
+					<div class="col fs-2 border-bottom border-1 border-secondary mb-4"> Recycling </div>
+				</div>
+				<div class="row">
+					<div class="col">
+						{/* <ArticleCarousel articles={recycleArts} category="recycle"/> */}
+					</div>
+				</div>
+				<div class="row">
+					<div class="col fs-2 border-bottom border-2 border-secondary mb-4"></div>
 				</div>
 			</div>
 			

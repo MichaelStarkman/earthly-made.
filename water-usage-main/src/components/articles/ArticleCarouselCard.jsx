@@ -4,7 +4,7 @@ import { Card, Button } from "react-bootstrap";
 
 const ArticleCarouselCard = (props) => {
 
-
+	// will update, information static for formatting purposes
 	return (
 		<div class="col">
 			<Card class="border border-0 rounded-0" style={{height: 500 }}>
