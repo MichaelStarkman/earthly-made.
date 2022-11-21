@@ -6,6 +6,8 @@ import ArticleCarouselCard from "./ArticleCarouselCard"
 // will have three items per carousel page
 
 const ArticleCarouselItem = (props) => {
+
+
 	return (
 		<>
 			{props.index === 0 ? 
