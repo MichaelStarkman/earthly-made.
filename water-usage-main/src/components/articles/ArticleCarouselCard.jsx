@@ -1,7 +1,10 @@
 import React from "react"
+import { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 
 const ArticleCarouselCard = (props) => {
+
+
 	return (
 		<div class="col">
 			<Card class="border border-0 rounded-0" style={{height: 500 }}>
