@@ -27,8 +27,12 @@ code {
 
 /* Donation Images */
 .donation-image {
-  
-  max-height: 150px;
-  max-width: 150px;
+  max-height: 110px;
+  /* max-width: 110px; */
 
+}
+
+/* Card Design for Donations page */
+.cardDesign {
+  margin: 0 30px;
 }
