@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { Button } from 'react-bootstrap'
 
 
 
@@ -18,8 +19,8 @@ const Email = () => {
   return (
     <form>
         <label htmlFor='email'>{msg}</label>
-        <input type='email' placeholder='Enter email' onChange={handleChange}/>
-        <button type='submit' onClick={handleSubmit}>Join Now</button>
+        <input className='email' type='email' placeholder='Enter email' onChange={handleChange}/>
+        <Button variant='dark' onClick={handleSubmit}>Join Now</Button>
     </form>
   )
 }

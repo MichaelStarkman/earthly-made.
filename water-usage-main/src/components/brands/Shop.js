@@ -1,9 +1,10 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 import '../../Brand.css'
 
 const Shop = (props) => {
   return (
-    <button className='shopButton' variant='primary'><a target={'_blank'} rel='noreferrer' href={props.link}>Visit Site</a></button>
+    <Button variant='dark' className='shopButton'><a target={'_blank'} rel='noreferrer' href={props.link}>Visit Site</a></Button>
   )
 }
 
