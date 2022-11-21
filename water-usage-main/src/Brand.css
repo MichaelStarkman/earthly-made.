@@ -124,6 +124,10 @@
     align-items: center;
 }
 
+.bound {
+    padding: 77px;
+}
+
 .brandCardImage {
     object-fit: cover;
     object-position: 100% 0;
