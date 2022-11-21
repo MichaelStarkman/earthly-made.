@@ -1,25 +1,28 @@
 import './App.css';
 import 'bootstrap';
-import MainLinks from './components/MainLinks';
 
 //import for bootstrap css
-import Map from './components/Map'
-import Donations from './components/Donations'
+// import Map from './components/Map'
+// import Donations from './components/Donations'
 // import Carousel from './components/Carousel'
 // import Hero from './components/Hero.jsx';
-import BottomText from './components/BottomText';
+// import BottomText from './components/BottomText';
+// import MainLinks from './components/MainLinks';
+import NewHero from './components/NewHero';
+
 
 
 
 function App() {
   return (
     <div className="App">
-      <Map />
-      <MainLinks />
-      {/* <Hero />
-      <Carousel /> */}
-      <Donations />
-      <BottomText />
+      <NewHero />
+      {/* <Hero /> */}
+      {/* <Map /> */}
+      {/* <MainLinks /> */}
+      {/* <Carousel /> */}
+      {/* <Donations /> */}
+      {/* <BottomText /> */}
     </div>
   );
 }
