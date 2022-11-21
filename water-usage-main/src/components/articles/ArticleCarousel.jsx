@@ -1,10 +1,10 @@
 import React from "react"
+import { useState } from "react"
 
 import ArticleCarouselIndicator from "./ArticleCarouselIndicator"
 import ArticleCarouselItem from "./ArticleCarouselItem"
 
 const ArticleCarousel = (props) => {
-
 
 	const addCarouselItems = () => {
 		let index = 0
@@ -19,13 +19,6 @@ const ArticleCarousel = (props) => {
 
 	return (
 		<div id="carousel-ArticlePage" class="carousel slide" data-bs-ride="false" style={{height: 535 }}>
-			{/* <div class="carousel-indicators" >
-				{props.articles.map((article) => {
-					return(
-						<ArticleCarouselIndicator index={props.articles.indexOf(article)} ariaLabel={`Slide ${props.articles.indexOf(article) + 1}`} />
-					)
-				})}
-			</div> */}
 			<div class="carousel-inner" >
 				{props.articles.map((article) => {
 					return <ArticleCarouselItem index={props.articles.indexOf(article)} article={article}/>
