@@ -186,3 +186,12 @@
     padding-left: 5px;
     margin:10px;
 }
+
+.navBar {
+    height: 80px;
+}
+
+.divotDown {
+    display: absolute;
+    top: 45px;
+}

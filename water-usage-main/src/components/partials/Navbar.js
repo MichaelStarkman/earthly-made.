@@ -7,9 +7,9 @@ import '../../App.css'
 function NavbarComponent() {
   return (
         <Navbar className='headerFooter navbar-custom' expand="lg">
-            <Container className="d-flex justify-content-around">
+            <Container className="d-flex navBar justify-content-around">
                 <LinkContainer to='/'>
-                    <Navbar.Brand className='give-absolute link-text' href="#home">earthly made.</Navbar.Brand>
+                    <Navbar.Brand className='give-absolute divotDown link-text' href="#home">earthly made.</Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className=''>
