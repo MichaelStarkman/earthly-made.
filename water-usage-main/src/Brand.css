@@ -1,3 +1,4 @@
+
 .brandPage {
     display: flex;
     flex-direction: column;
@@ -7,16 +8,51 @@
     overflow: hidden;
 }
 
-.opening {
-    /* width: 75%;     */
-    padding-top: 50px;
-    padding-bottom: 10px;
+/* Opening section */
+
+.gridContainer {
+    display: grid;
+    max-width: 100vw;
+    max-height: 100vh;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
 }
 
-.opening h1 {
+.opening {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.openImg {
+    width: 266px;
+    height: 354px;
+}
+
+.oBlurb {
+    grid-row-start: 3;
+}
+
+/* .opening h1 {
+    height: 100vh;
     font-size: 70px;
     font-weight: bolder;
+    display: grid;
+    grid-template-columns: 12;
+    grid-template-rows: 10;
+} */
+
+/* .opener {
+    height: fit-content;
+    font-size: 184px;
+} */
+
+.oTop {
+    grid-column-start: 3;
+    grid-column-end: 7;
 }
+
+/* opening section close  */
 
 .cta {    
     padding: 10px;
@@ -33,46 +69,53 @@
     margin-bottom: 30px;
     border-radius: 10px;
     background-color: rgb(215, 215, 215);
+    width: 100vw;
+}
+
+.filterBar button {
+    background: transparent;
+    border: none;
 }
 
 /* card components */
 
-.fullCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
 .shopButton, .shopButton a {
     background-color: rgb(130, 130, 130);
-    /* padding: 20px 60px; */
     color: white;
     text-decoration: none;
     border: none;
-    /* border-radius: 30px; */
     font-size: 20px;
     font-weight: bold;
 }
-.brandCard {
-    /* background-color: rgb(215, 215, 215); */
-    /* margin-top: 50px; */
-    /* margin-bottom: 30px; */
-    /* width: 75%; */
-    
-    
+
+.brandContainer {
+    padding: 20px;
+    height: 100%;
+    width: 380px;
+}
+
+#shop {
+    /* position: relative;
+    bottom: 0; */
+    margin-top: 10px;
+}
+
+.textBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .brandCardAbout {
     width: 100%;
-    height: 150px;
-    overflow-y: scroll;
+    height: fit-content
+    /* overflow-y: scroll; */
 }
 
 .brandCardBlurb {
     width: 100%;
-    height: 200px;
-    overflow-y: scroll;
+    height: fit-content
+    /* overflow-y: scroll; */
 }
 
 .brandImgContainer {
@@ -81,11 +124,19 @@
     align-items: center;
 }
 
+.bound {
+    padding: 77px;
+}
+
 .brandCardImage {
-    max-height: 50%;
-    max-width: 50%;
-    
-    
+    object-fit: cover;
+    object-position: 100% 0;
+    height: 398px;
+    width: 379px;
+}
+
+.spacer {
+    height: 370px;
 }
 
 .brand button {
@@ -111,15 +162,21 @@
 }
 
 .right {
-    background-color: rgb(212, 212, 212);
+    display: flex;
+    flex-direction: row-reverse;
+    
 }
 
 .left {
-    /* background-color: blue; */
-    display: flex;
-    flex-direction: row-reverse;
+    background-color: rgb(212, 212, 212);
+    
 }
 
 .content {
     width: 75%;
+}
+
+
+.active {
+    text-decoration: underline;
 }
