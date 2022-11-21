@@ -9,25 +9,25 @@ function NavbarComponent() {
         <Navbar className='headerFooter navbar-custom' expand="lg">
             <Container className="d-flex justify-content-around">
                 <LinkContainer to='/'>
-                    <Navbar.Brand className='give-absolute' href="#home">earthly made.</Navbar.Brand>
+                    <Navbar.Brand className='give-absolute link-text' href="#home">earthly made.</Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className=''>
                 <Nav className="w-100 d-flex justify-content-between">
                     <div className='d-flex flex-row'>
                         <LinkContainer to={'/brands'}>
-                            <Nav.Link><u>Brands</u></Nav.Link>
+                            <Nav.Link><u className='link-text'>Brands</u></Nav.Link>
                         </LinkContainer>
                         <LinkContainer to={'/articles'}>
-                            <Nav.Link><u>Articles</u></Nav.Link>
+                            <Nav.Link><u className='link-text'>Articles</u></Nav.Link>
                         </LinkContainer>
                     </div>
                     <div className='d-flex flex-row'>
                         <LinkContainer to={'/contact'}>
-                            <Nav.Link><u>Contact Us</u></Nav.Link>
+                            <Nav.Link><u className='link-text'>Contact Us</u></Nav.Link>
                         </LinkContainer>
                         <LinkContainer to={'/about'}>
-                            <Nav.Link><u>About Us</u></Nav.Link>
+                            <Nav.Link><u className='link-text'>About Us</u></Nav.Link>
                         </LinkContainer>
                     </div>
                 </Nav>

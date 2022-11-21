@@ -7,6 +7,7 @@ import Map from './components/Map'
 import Donations from './components/Donations'
 // import Carousel from './components/Carousel'
 // import Hero from './components/Hero.jsx';
+import BottomText from './components/BottomText';
 
 
 
@@ -18,6 +19,7 @@ function App() {
       {/* <Hero />
       <Carousel /> */}
       <Donations />
+      <BottomText />
     </div>
   );
 }
