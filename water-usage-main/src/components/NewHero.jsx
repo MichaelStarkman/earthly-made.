@@ -13,7 +13,7 @@ const NewHero = () => {
         }}>Find your next destination for all things sustainable fashion</h2>
       </div>
       <a href='#map'>
-        <Button variant="dark"  style={{marginTop: '25vh', border: 'solid 1px white'}}>Get Started</Button>
+        <Button variant="dark"  style={{marginTop: '5vh', border: 'solid 1px white'}}>Get Started</Button>
       </a>
 
     </div>
