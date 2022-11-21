@@ -14,16 +14,16 @@
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    padding-top: 40px;
+    padding-top: 50px;
     align-items: center;
     width: 80vw;
-    height: 100vh;
+    height: calc(100vh - 100px);
 }
 
 .openHead {
     z-index: 2;
-    padding-left: 190px;
-    font-size: 150px;
+    padding-left: 40px;
+    font-size: 100px;
     font-weight: bold;
 }
 
@@ -34,28 +34,28 @@
 
 .oBlurb {
     z-index: 1;
-    padding-top: 95px;
-    width: 650px;
-    font-weight: bolder;
+    padding-top: 12%;
+    width: 500px;
+    font-size: 22px;
+    
 }
 
 .openImg1 {
     position: absolute;
-    top: 405px;
-    left: 330px
+    top: 35%;
+    left: 22%;
 }
 
 .openImg2 {
     position: absolute;
-    top: 535px;
-    right: 350px;
+    top: 44%;
+    right: 22%;
 }
 
 .oh2 {
     position: relative;
-    top: 120px;
-    /* right: 120px; */
-    right: 10%;
+    top: 80px;
+    right: 6%;
 }
 
 .openImgDiv {
@@ -107,6 +107,18 @@
     width: 380px;
 }
 
+.blurbContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrot {
+    font-size: 40px;
+    font-weight: bold;
+}
+
 .nameContainer {
     white-space: nowrap;
 }
@@ -153,7 +165,7 @@
 }
 
 .spacer {
-    height: 370px;
+    height: 170px;
 }
 
 .brand button {
@@ -209,34 +221,55 @@
     height: 80px;
 }
 
-.divotDown {
-    display: absolute;
-    top: 45px;
-}
 
-@media (max-width: 1850px) {
-    .openImg {
-        opacity: 50%;
+@media (max-width: 1600px) {
+
+    .openHead {
+        padding-left: 100px;
+    }
+
+    .openImg1 {
+        top: 37%;
+        left: 16%;
+    }
+
+    .openImg2 {
+        right: 17%;
+        top: 49%;
     }
 }
 
+@media (max-width: 1366px) {
+    .openHead {
+        font-size: 70px;
+    }
 
-@media (max-width: 1700px) {
     .oBlurb {
-        background-color: #efeae7;
-        /* width: 45vw; */
+        padding-top: 7%;
+        width: 35%;
+        font-size: 15px;
     }
+
+    .openImg2 {
+        right: 13%;
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    .openImg1 {
+        top: 42%;
+        left: 19%;
+    }
+
+    .openImg2 {
+        top: 52%;
+        right: 20%;
+    }
+
     .openImg {
-        opacity: 0;
-    }
-
-    .oh2 {
-        right: 27.5%;
-    }
-
-    .oh1 {
-        position: relative;
-        left: 10%;
-    }
-    
+        width: 199px;
+        height: 266px;
+    } 
 }

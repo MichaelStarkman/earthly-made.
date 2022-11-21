@@ -231,7 +231,7 @@ const Brands = () => {
 
   const cards = set.map((brand, i) => {
     return (
-      <div className={``} key={`${brand.name}${i}`}>
+      <div key={`${brand.name}${i}`}>
         <BrandCards i={i + 1} brand={brand} link={brand.link}/>
       </div>
     )
