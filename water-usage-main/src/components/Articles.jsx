@@ -111,7 +111,8 @@ const Articles = () => {
 				</div>
 				<div class="row">
 					<div class="col">
-						<ArticleCarousel articles={waterArts} category="water"/>
+						{/* {console.log(`articles:${waterArts.length} . numItems:${Math.round(waterArts.length / 3)}`)} */}
+						<ArticleCarousel articles={waterArts} category="water" numItems={Math.round(waterArts.length / 3)}/>
 					</div>
 				</div>
 				<div class="row">
