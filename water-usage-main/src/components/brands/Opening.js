@@ -8,7 +8,7 @@ const Opening = () => {
   return (
       <div className='opening'>
         <div className='openHead'>
-          <span>Sustainable</span>
+          <span className='oh1'>Sustainable</span>
           <span className='oh2'>Brands</span>
         </div>
         <h3 className='oBlurb'>
