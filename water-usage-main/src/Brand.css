@@ -128,12 +128,14 @@
 }
 
 .brandCardImage {
-    object-fit: contain;
+    object-fit: cover;
+    object-position: 100% 0;
     height: 398px;
     width: 379px;
-    
-    
-    
+}
+
+.spacer {
+    height: 35vh;
 }
 
 .brand button {

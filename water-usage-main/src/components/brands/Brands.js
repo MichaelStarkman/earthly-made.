@@ -232,6 +232,9 @@ const Brands = () => {
         <FilterBar />
         {cards}
       </div>
+      <div className='spacer'>
+
+      </div>
     </div>
   )
 }
