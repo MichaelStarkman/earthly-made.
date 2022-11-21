@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import BrandCards from './BrandCards'
 import CallToAction from './CallToAction'
 import FilterBar from './FilterBar'
 import Opening from './Opening'
-import Shop from './Shop'
 import '../../Brand.css'
 
 // afford photos
@@ -210,16 +209,34 @@ const testBrands = [
 
 ]
 
-const cards = affordable.map((brand, i) => {
-  return (
-    <div className='fullCard' key={`${brand.name}${i}`}>
-      <BrandCards i={i + 1} brand={brand} link={brand.link}/>
-    </div>
-  )
-})
+
 
 
 const Brands = () => {
+  // console.log('aff',affordable)
+  const [set, setSet] = useEffect({affordable})
+
+  const setAffordable = () => {
+
+  }
+  
+  const setBest = () => {
+  
+  }
+  
+  const setSus = () => {
+  
+  }
+
+  const cards = affordable.map((brand, i) => {
+    return (
+      <div className='fullCard' key={`${brand.name}${i}`}>
+        <BrandCards i={i + 1} brand={brand} link={brand.link}/>
+      </div>
+    )
+  })
+
+
   return (
     <div className='brandPage'>
       <div className='opening'>
