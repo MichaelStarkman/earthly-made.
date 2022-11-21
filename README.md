@@ -51,4 +51,4 @@ Our team is proud of the content we were able to fit in within the 6-day time li
 
 ## Credits
 
-Mapbox API used for map loadd and geocoding. 
+Mapbox API used for map load and geocoding. 
