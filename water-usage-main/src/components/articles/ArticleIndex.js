@@ -26,7 +26,7 @@ const ArticleIndex = [
 		body: 'As we’ve become more conscious about our purchases, we often wonder: Who makes the clothes we wear every day and in what kind of conditions? Documentaries like “The True Cost” shine a light on how the fast fashion industry depletes the earth’s resources and leverages labor to pass on a "cheap" cost to the end consumer.',
 		date: "11/3/2022",
 		author: "the good trade editors",
-		category: ['water', 'energy']
+		category: ['water', 'energy', 'feature']
 	},
 	{
 		url: 'https://www.redressraleigh.org/sustainable-fashion?gclid=CjwKCAiAmuKbBhA2EiwAxQnt73KRoaWHtWg5YFbF2fhOip5eDu1nHGbobMtySd9xgw2rXWZm1boI2hoC6vYQAvD_BwE',
@@ -37,7 +37,7 @@ const ArticleIndex = [
 		body: 'Sustainable fashion (or clothing) uses textiles that are manufactured, constructed, and marketed in a responsible and conscious way that acknowledges and accounts for their environmental and socioeconomic impacts. This is ideally done across a garment’s full life cycle, from creation to disposal. Responsible designers understand that everything they make has influence — from the materials they use to the way they treat the people producing their goods. ',
 		date: " ",
 		author: "Redress Raleigh",
-		category: ['recycle', 'water', 'energy']
+		category: ['recycle', 'water', 'energy', 'feature']
 	},
 	{
 		url: 'https://www.oxfordstudent.com/2022/11/09/can-fast-fashion-be-made-sustainable/',
@@ -48,7 +48,7 @@ const ArticleIndex = [
 		body: 'The modern fashion industry is complicated. It relies on both political and economic processes that enable globalised supply chains and on human psychology, which drives us to desire new clothing on a regular basis. The industry is environmentally damaging in almost every possible way, on top of being notorious for greenwashing. There is a vague vision of building a circular economy, which aims to reuse and recycle existing products as long as possible, but upon closer inspection, this model bears strong resemblance to the failed project of plastic recycling.',
 		date: "11/9/2022",
 		author: "Christian McIntosh",
-		category: ['energy', 'recycle']
+		category: ['energy', 'recycle', 'feature']
 	},
 	{
 		url: 'https://www.google.com/search?q=sustainable+fashion&sxsrf=ALiCzsYIN4C9rwQnxEwjWGrAIAwdlLxigA%3A1668964026176&ei=ul56Y7ykCuKh5NoPwcWqqA4&ved=0ahUKEwi86bC_n737AhXiEFkFHcGiCuUQ4dUDCBE&uact=5&oq=sustainable+fashion&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQgAQQsQMyCwgAEIAEELEDEMkDMgsILhCABBDHARCvATIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEEcQ1gQQsAM6BAgjECc6BQgAEJECOgQIABBDOg4ILhCABBCxAxDHARDRAzoLCAAQgAQQsQMQgwE6BAguEEM6DggAEIAEELEDEIMBEMkDOgcILhDUAhBDOgcIABCxAxBDOgsILhCABBDHARDRA0oECEEYAEoECEYYAFD-CFi3JGDnJWgDcAF4AYABowGIAf8LkgEEMTcuMpgBAKABAcgBCMABAQ&sclient=gws-wiz-serp',
