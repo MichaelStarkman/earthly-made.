@@ -4,12 +4,13 @@ import Shop from './Shop'
 
 const BrandCards = (props) => {
   return (
-    <div className='container'>
+    <div className='container cardSet'>
         <div className={`row  ${props.i % 2 ===0? 'right' : 'left'} `}>
             <div className='brandImgContainer col-md'>
-                <img className='brandCardImage' src={`${props.brand.image}`} alt={`${props.brand.name}`} />
+                {console.log(Object.values(props.brand.image))}
+                <img className='brandCardImage' src={`${Object.values(props.brand.image)}`} alt={`${props.brand.name}`} />
             </div>
-            <div className='col-md'>
+            <div className='col-md textBlock'>
                 <div className='brandContainer' >
                     <div>
                         <h1>

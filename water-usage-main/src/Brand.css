@@ -91,6 +91,24 @@
     font-weight: bold;
 }
 
+.brandContainer {
+    height: 100%;
+    width: 380px;
+}
+
+.cardSet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+}
+
+.textBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .brandCardAbout {
     width: 100%;
     height: fit-content
@@ -110,8 +128,10 @@
 }
 
 .brandCardImage {
-    max-height: 50%;
-    max-width: 50%;
+    object-fit: contain;
+    height: 398px;
+    width: 379px;
+    
     
     
 }
