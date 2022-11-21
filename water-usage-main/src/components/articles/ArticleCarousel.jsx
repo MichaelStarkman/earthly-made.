@@ -5,9 +5,9 @@ import ArticleCarouselItem from "./ArticleCarouselItem"
 
 const ArticleCarousel = (props) => {
 
+	const [articles, setArticles] = useState([...props.articles])
 	const [category] = useState(props.category)
-
-	const [caroItems, setCaroItems] = useState([])
+	const [carouselItems, setCaroItems] = useState([])
 
 	const generateCarouselItems = () => {
 		let itemNum = 0
@@ -17,21 +17,23 @@ const ArticleCarousel = (props) => {
 		while (itemNum < props.numItems) {
 			console.log(`Created CarouselItem #${itemNum}`);
 			while (id < itemNum * 3) {
-				console.log(id);
-				arts.push(props.articles[id])
+				arts.push(id)
 				id++
 			}
+			console.log(arts);
 			// console.log(`  props {num:${itemNum}, articles:[${id}]} `);
 			// console.log(caroItems[itemNum]);
-			setCaroItems([...caroItems, {num: itemNum, articles:arts}])
+			setCaroItems([...carouselItems, {num: itemNum, articles:arts}])
 			arts = []
 			itemProps = {}
 			itemNum ++
 		}
+
 	}
 
 	useEffect(() => {
-		console.log(`craete ${props.numItems} CarouselItems`);
+		setArticles([...props.articles])
+		console.log(`create ${Math.floor(articles.length)} CarouselItems`);
 		generateCarouselItems()
 	}, [])
 

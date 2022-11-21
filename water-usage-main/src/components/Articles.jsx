@@ -19,6 +19,7 @@ import ArticleIndex from "./articles/ArticleIndex.js"
 
 const Articles = () => {
 
+	const [allArticles, setAllArticles] = useState([])
 	const [waterArts, setWaterArts] = useState([]);
 	const [energyArts, setEnergyArts] = useState([]);
 	const [recycleArts, setRecycleArts] = useState([]);
@@ -29,7 +30,7 @@ const Articles = () => {
 		let energyArr = []
 		let recycleArr = []
 		let featureArr = []
-		ArticleIndex.forEach((article) => {
+		allArticles.forEach((article) => {
 			if (article.category.includes("water")) {
 				waterArr.push(article)
 			}
@@ -50,7 +51,30 @@ const Articles = () => {
 	}
 
 	useEffect(() => {
-		categorySort()
+		setAllArticles([...ArticleIndex])
+		// categorySort()s
+		let waterArr = []
+		let energyArr = []
+		let recycleArr = []
+		let featureArr = []
+		allArticles.forEach((article) => {
+			if (article.category.includes("water")) {
+				waterArr.push(article)
+			}
+			if (article.category.includes('energy')) {
+				energyArr.push(article)
+			}
+			if (article.category.includes("recycle")) {
+				recycleArr.push(article)
+			}
+			if (article.category.includes("feature")) {
+				featureArr.push(article)
+			}
+		})
+		setWaterArts(...[waterArr])
+		setEnergyArts(...[energyArr])
+		setRecycleArts(...[recycleArr])
+		setFeatureArts(...[featureArr])
 	}, [])
 
 	return (
@@ -67,7 +91,7 @@ const Articles = () => {
 				<div class="row ms-1">
 					<div class="col">
 						{/* Featuerd Articles -- 3 Articles split into two columns */}
-						{/* <FeaturedArticles articles={featureArts}/> */}
+						<FeaturedArticles articles={featureArts}/>
 					</div>
 				</div>
 				<br />
@@ -82,7 +106,7 @@ const Articles = () => {
 				<div class="row">
 					<div class="col">
 						{/* Carousel will loop through array of all articles in the water category*/}
-						<ArticleCarousel articles={waterArts} category="water" numItems={Math.floor(waterArts.length / 3)}/>
+						<ArticleCarousel articles={waterArts} category="water"/>
 					</div>
 				</div>
 			</div>
