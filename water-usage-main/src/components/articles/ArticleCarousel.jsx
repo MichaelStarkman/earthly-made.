@@ -42,9 +42,13 @@ const ArticleCarousel = (props) => {
 						// escape while loop
 						ai = ni * 3
 					}
+					
+					//check variable being put into item props
+					// console.log(`    Props:  index:${ni}, articles: ${arr}`);
+					itemProps = {index: ni, articles: [...arr]}
 					ai ++
 				}
-				itemProps = {index: ni, articles: [...arr]}
+				
 
 				// created this to avoid odd behavior of creating an extra crousel item
 				if (ni < numItems) {
