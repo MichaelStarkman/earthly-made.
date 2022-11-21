@@ -104,18 +104,12 @@ function Map() {
         })
 
 
-        // console.log(storeInfo.current)
-
-
-
-        // console.log(storeData)
-
 
     }, [storeData]);
 
 
     return (
-        <div className='outerMapContainer'>
+        <div id='map' className='outerMapContainer'>
             <div ref={mapContainer} className='map-container' />
             <h1 className='fs-3 fw-normal pt-4'>{storeData.length !== 0 ? 'Results' : ''}</h1>
             <div className={`${storeData.length !== 0 ? 'sidebar' : ''}  ${show ? 'sidebarExpanded' : ''}`}>
