@@ -12,8 +12,8 @@ mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_KEY
 function Map() {
     const mapContainer = useRef(null);
     const map = useRef(null);
-    const [lng, setLng] = useState(-113.9);
-    const [lat, setLat] = useState(33);
+    const [lng, setLng] = useState(-122.449068);
+    const [lat, setLat] = useState(37.757838);
     const [zoom, setZoom] = useState(13);
     const [show, setShow] = useState(false)
 
@@ -30,7 +30,7 @@ function Map() {
         map.current = new mapboxgl.Map({
             container: mapContainer.current,
             style: 'mapbox://styles/mapbox/streets-v11',
-            center: [-113, 33],
+            center: [lng, lat],
             zoom: zoom
         });
 
@@ -110,7 +110,7 @@ function Map() {
 
     return (
         <div id='map' className='outerMapContainer'>
-            <div className='py-4'>
+            <div className='py-4 pt-2 mb-3'>
                 <h1>Locate a thrift store near you!</h1>
             </div>
             <div ref={mapContainer} className='map-container' />
