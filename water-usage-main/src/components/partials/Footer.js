@@ -16,12 +16,12 @@ function FooterComponent() {
                 <Email />
               </div>
               <div className='d-flex'>
-                <LinkContainer to={'/contact'}>
+                {/* <LinkContainer to={'/contact'}>
                   <Nav.Link className='p-1' ><u className='link-text'>Contact Us</u></Nav.Link>
-                </LinkContainer>
-                <LinkContainer to={'/socials'}>
+                </LinkContainer> */}
+                {/* <LinkContainer to={'/socials'}>
                   <Nav.Link className='p-1' ><u className='link-text'>Socials?</u></Nav.Link>
-                </LinkContainer>
+                </LinkContainer> */}
                 <LinkContainer to={'/about'}>
                   <Nav.Link className='p-1' ><u className='link-text'>About Us</u></Nav.Link>
                 </LinkContainer>

@@ -23,9 +23,9 @@ function NavbarComponent() {
                         </LinkContainer>
                     </div>
                     <div className='d-flex flex-row'>
-                        <LinkContainer to={'/contact'}>
+                        {/* <LinkContainer to={'/contact'}>
                             <Nav.Link><u className='link-text'>Contact Us</u></Nav.Link>
-                        </LinkContainer>
+                        </LinkContainer> */}
                         <LinkContainer to={'/about'}>
                             <Nav.Link><u className='link-text'>About Us</u></Nav.Link>
                         </LinkContainer>
