@@ -209,10 +209,10 @@
     height: 80px;
 }
 
-.divotDown {
+/* .divotDown {
     display: absolute;
     top: 45px;
-}
+} */
 
 @media (max-width: 1850px) {
     .openImg {
