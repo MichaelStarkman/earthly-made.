@@ -10,18 +10,20 @@
 
 /* Opening section */
 
-.gridContainer {
-    display: grid;
-    max-width: 100vw;
-    max-height: 100vh;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-}
-
 .opening {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-top: 40px;
+    align-items: center;
     width: 100vw;
+    height: 100vh;
+}
+
+.openHead {
+    padding-left: 190px;
+    font-size: 150px;
+    font-weight: bold;
 }
 
 .openImg {
@@ -30,26 +32,33 @@
 }
 
 .oBlurb {
-    grid-row-start: 3;
+    padding-top: 95px;
+    width: 860px;
 }
 
-/* .opening h1 {
-    height: 100vh;
-    font-size: 70px;
-    font-weight: bolder;
-    display: grid;
-    grid-template-columns: 12;
-    grid-template-rows: 10;
-} */
+.openImg1 {
+    position: absolute;
+    top: 400px;
+    left: 210px
+}
 
-/* .opener {
-    height: fit-content;
-    font-size: 184px;
-} */
+.openImg2 {
+    position: absolute;
+    top: 535px;
+    right: 250px;
+}
 
-.oTop {
-    grid-column-start: 3;
-    grid-column-end: 7;
+.oh2 {
+    position: relative;
+    top: 120px;
+    right: 120px;
+}
+
+.openImgDiv {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* opening section close  */
