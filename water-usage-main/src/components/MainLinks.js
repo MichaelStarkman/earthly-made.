@@ -15,10 +15,12 @@ const MainLinks = () => {
         <Row>
             <Col className='display-flex flex-direction'>
                 <br></br>
-                <h2 style={{ 
+                {/* Added padding bottom to space out title from rest of component */}
+                <h2 className='pb-5' style={{ 
                     fontWeight: '600'
                 }}>Introducing a down to earth experience</h2>
-                <h4>Reduce | Recyce | Reuse</h4>
+                {/* Deleting this h4 per Maurcell's request */}
+                {/* <h4>Reduce | Recyce | Reuse</h4> */}
                 <br></br>
             </Col>
         </Row>
