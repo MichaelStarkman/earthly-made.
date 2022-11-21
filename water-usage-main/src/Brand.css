@@ -97,9 +97,14 @@
 }
 
 .brandContainer {
+    
     padding: 20px;
     height: 100%;
     width: 380px;
+}
+
+.nameContainer {
+    white-space: nowrap;
 }
 
 #shop {

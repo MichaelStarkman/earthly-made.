@@ -11,7 +11,7 @@ const BrandCards = (props) => {
             </div>
             <div className='col-md textBlock'>
                 <div className='brandContainer' >
-                    <div>
+                    <div className='nameContainer'>
                         <h1>
                             {props.brand.name}
                         </h1>
