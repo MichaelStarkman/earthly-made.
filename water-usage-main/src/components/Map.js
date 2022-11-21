@@ -110,6 +110,9 @@ function Map() {
 
     return (
         <div id='map' className='outerMapContainer'>
+            <div className='py-4'>
+                <h1>Locate a thrift store near you!</h1>
+            </div>
             <div ref={mapContainer} className='map-container' />
             <h1 className='fs-3 fw-normal pt-4'>{storeData.length !== 0 ? 'Results' : ''}</h1>
             <div className={`${storeData.length !== 0 ? 'sidebar' : ''}  ${show ? 'sidebarExpanded' : ''}`}>

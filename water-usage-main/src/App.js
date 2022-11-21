@@ -19,7 +19,7 @@ function App() {
       <NewHero />
       <Map />
       <MainLinks />
-      <Carousel />
+      {/* <Carousel /> */}
       <Donations />
       <BottomText />
     </div>

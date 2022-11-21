@@ -149,7 +149,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 80vh;
+  height: calc(100vh - 75px);
   width: 100vw; 
 }
 
