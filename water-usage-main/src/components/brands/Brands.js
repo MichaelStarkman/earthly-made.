@@ -211,24 +211,27 @@ const testBrands = [
 
 const Brands = () => {
   
-  
-  const [set, setSet] = useState(affordable)
+  const [active, setActive] = useState(0)
+  const [set, setSet] = useState(trending)
 
   const handleSetAffordable = () => {
     setSet(affordable)
+    setActive(1)
   }
   
   const handleSetBest = () => {
     setSet(best)
+    setActive(2)
   }
   
   const handleSetTrending = () => {
     setSet(trending)
+    setActive(0)
   }
 
   const cards = set.map((brand, i) => {
     return (
-      <div className='fullCard' key={`${brand.name}${i}`}>
+      <div key={`${brand.name}${i}`}>
         <BrandCards i={i + 1} brand={brand} link={brand.link}/>
       </div>
     )
@@ -241,7 +244,7 @@ const Brands = () => {
           <Opening />
       </div>
       <div className=''>
-        <FilterBar best={handleSetBest} affordable={handleSetAffordable} trending={handleSetTrending} />
+        <FilterBar active={active} best={handleSetBest} affordable={handleSetAffordable} trending={handleSetTrending} />
         {cards}
       </div>
       <div className='spacer'>

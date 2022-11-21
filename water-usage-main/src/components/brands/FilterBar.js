@@ -5,11 +5,14 @@ import '../../Brand.css'
 
 
 const FilterBar = (props) => {
+
+  
+
   return (
     <div className='filterBar'>
-        <button onClick={props.trending}>What's Trending</button>
-        <button onClick={props.affordable}>Best Affordable Brands</button>
-        <button onClick={props.best}>Best Basics</button>
+        <button className={`${props.active === 0? 'active' : ''}`} onClick={props.trending}>What's Trending</button>
+        <button className={`${props.active === 1? 'active' : ''}`} value={1} onClick={props.affordable}>Best Affordable Brands</button>
+        <button className={`${props.active === 2? 'active' : ''}`} value={2} onClick={props.best}>Best Basics</button>
     </div>
   )
 }

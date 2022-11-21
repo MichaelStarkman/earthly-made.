@@ -72,22 +72,18 @@
     width: 100vw;
 }
 
-/* card components */
-
-.fullCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 50vh;
+.filterBar button {
+    background: transparent;
+    border: none;
 }
+
+/* card components */
 
 .shopButton, .shopButton a {
     background-color: rgb(130, 130, 130);
-    /* padding: 20px 60px; */
     color: white;
     text-decoration: none;
     border: none;
-    /* border-radius: 30px; */
     font-size: 20px;
     font-weight: bold;
 }
@@ -136,7 +132,7 @@
 }
 
 .spacer {
-    height: 35vh;
+    height: 370px;
 }
 
 .brand button {
@@ -162,13 +158,14 @@
 }
 
 .right {
-    background-color: rgb(212, 212, 212);
+    display: flex;
+    flex-direction: row-reverse;
+    
 }
 
 .left {
-    /* background-color: blue; */
-    display: flex;
-    flex-direction: row-reverse;
+    background-color: rgb(212, 212, 212);
+    
 }
 
 .content {
@@ -176,3 +173,6 @@
 }
 
 
+.active {
+    text-decoration: underline;
+}
