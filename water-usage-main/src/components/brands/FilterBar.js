@@ -4,12 +4,12 @@ import '../../Brand.css'
 // filter handle function to put aff/sus/inc at top of list.
 
 
-const FilterBar = () => {
+const FilterBar = (props) => {
   return (
     <div className='filterBar'>
-        <button>Most Affordable</button>
-        <button>Most Sustainable</button>
-        <button>Most Inclusive</button>
+        <button onClick={props.trending}>What's Trending</button>
+        <button onClick={props.affordable}>Best Affordable Brands</button>
+        <button onClick={props.best}>Best Basics</button>
     </div>
   )
 }

@@ -69,6 +69,7 @@
     margin-bottom: 30px;
     border-radius: 10px;
     background-color: rgb(215, 215, 215);
+    width: 100vw;
 }
 
 /* card components */

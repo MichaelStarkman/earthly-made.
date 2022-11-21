@@ -3,7 +3,7 @@ import '../../Brand.css'
 
 const Shop = (props) => {
   return (
-    <button className='shopButton' variant='primary'><a href={props.link}>Visit Site</a></button>
+    <button className='shopButton' variant='primary'><a target={'_blank'} rel='noreferrer' href={props.link}>Visit Site</a></button>
   )
 }
 

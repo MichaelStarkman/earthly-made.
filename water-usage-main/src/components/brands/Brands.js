@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
 import BrandCards from './BrandCards'
 import CallToAction from './CallToAction'
 import FilterBar from './FilterBar'
@@ -209,26 +209,24 @@ const testBrands = [
 
 ]
 
-
-
-
 const Brands = () => {
-  // console.log('aff',affordable)
-  const [set, setSet] = useEffect({affordable})
+  
+  
+  const [set, setSet] = useState(affordable)
 
-  const setAffordable = () => {
-
+  const handleSetAffordable = () => {
+    setSet(affordable)
   }
   
-  const setBest = () => {
-  
+  const handleSetBest = () => {
+    setSet(best)
   }
   
-  const setSus = () => {
-  
+  const handleSetTrending = () => {
+    setSet(trending)
   }
 
-  const cards = affordable.map((brand, i) => {
+  const cards = set.map((brand, i) => {
     return (
       <div className='fullCard' key={`${brand.name}${i}`}>
         <BrandCards i={i + 1} brand={brand} link={brand.link}/>
@@ -243,8 +241,7 @@ const Brands = () => {
           <Opening />
       </div>
       <div className=''>
-        <CallToAction />
-        <FilterBar />
+        <FilterBar best={handleSetBest} affordable={handleSetAffordable} trending={handleSetTrending} />
         {cards}
       </div>
       <div className='spacer'>

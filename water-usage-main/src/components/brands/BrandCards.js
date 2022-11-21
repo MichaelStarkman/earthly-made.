@@ -5,7 +5,7 @@ import Shop from './Shop'
 const BrandCards = (props) => {
   return (
     <div className='container'>
-        <div className={`row  ${props.i % 2 ===0? 'right' : 'left'} `}>
+        <div className={`row  ${props.i % 2 ===0? 'left' : 'right'} `}>
             <div className='brandImgContainer col-md'>
                 <img className='brandCardImage' src={`${Object.values(props.brand.image)}`} alt={`${props.brand.name}`} />
             </div>
