@@ -149,7 +149,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: calc(100vh - 75px);
+  height: 88vh;
   width: 100vw; 
 }
 
@@ -158,7 +158,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4em;
+  padding: 9em;
 }
 
 .hero-text-main {
