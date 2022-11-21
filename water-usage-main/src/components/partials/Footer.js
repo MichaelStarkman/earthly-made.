@@ -10,7 +10,7 @@ function FooterComponent() {
     <Navbar className='headerFooter navbar-custom' expand="lg">
       <Container>
           <Nav className="w-100">
-            <div className='d-flex justify-content-evenly w-100'>
+            <div className='d-flex justify-content-evenly align-items-baseline w-100'>
               <p>earthly made.</p>
               <div>
                 <Email />
