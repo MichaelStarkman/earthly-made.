@@ -1,3 +1,4 @@
+import React from "react"
 import { useState } from "react"
 import { useEffect } from "react"
 
@@ -16,38 +17,41 @@ import ArticleIndex from "./articles/ArticleIndex.js"
 // }
 
 
-
 const Articles = () => {
 
-	const [waterArticles, setWaterArticles] = useState([]);
-	const [energyArticles, setEnergyArticles] = useState([]);
-	const [recycleArticles, setRecycleArticles] = useState([]);
-	const [featuredArticles, setFeaturedArticles] = useState([]);
+	const [waterArts, setWaterArts] = useState([]);
+	const [energyArts, setEnergyArts] = useState([]);
+	const [recycleArts, setRecycleArts] = useState([]);
+	const [featureArts, setFeatureArts] = useState([]);
 
 	const categorySort = () => {
 		let waterArr = []
 		let energyArr = []
 		let recycleArr = []
+		let featureArr = []
 		ArticleIndex.forEach((article) => {
-			if (article.category === "water") {
+			if (article.category.includes("water")) {
 				waterArr.push(article)
 			}
-			if (article.category === "energy") {
+			if (article.category.includes('energy')) {
 				energyArr.push(article)
 			}
-			if (article.category === "recycle") {
+			if (article.category.includes("recycle")) {
 				recycleArr.push(article)
 			}
+			if (article.category.includes("feature")) {
+				featureArr.push(article)
+			}
 		})
-		setWaterArticles(waterArr)
-		setEnergyArticles(energyArr)
-		setRecycleArticles(recycleArr)
+		setWaterArts(...[waterArr])
+		setEnergyArts(...[energyArr])
+		setRecycleArts(...[recycleArr])
+		setFeatureArts(...[featureArr])
 	}
 
 	useEffect(() => {
-		setFeaturedArticles([ArticleIndex[0],ArticleIndex[1],ArticleIndex[2]])
 		categorySort()
-	}, []);
+	}, [])
 
 	return (
 		<>
@@ -63,7 +67,7 @@ const Articles = () => {
 				<div class="row ms-1">
 					<div class="col">
 						{/* Featuerd Articles -- 3 Articles split into two columns */}
-						{/* <FeaturedArticles articles={featuredArticles}/> */}
+						<FeaturedArticles articles={featureArts}/>
 					</div>
 				</div>
 				<br />
@@ -75,13 +79,12 @@ const Articles = () => {
 				<div class="row">
 					<div class="col fs-2 border-bottom border-2 border-secondary mb-4"> Water Conservation</div>
 				</div>
-				
-						<div class="row">
-							<div class="col">
-								{/* Carousel will loop through array of all articles */}
-								<ArticleCarousel articles={ArticleIndex}/>
-							</div>
-						</div>
+				<div class="row">
+					<div class="col">
+						{/* Carousel will loop through array of all articles in the water category*/}
+						<ArticleCarousel articles={waterArts} category="water"/>
+					</div>
+				</div>
 			</div>
 			
 		</>
