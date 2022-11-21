@@ -13,6 +13,7 @@ const ArticleCarouselItem = (props) => {
 			{props.index === 0 ? 
 				<div class="carousel-item active">
 					<div class="row gx-5">
+						{/* These are just the same for testing */}
 						<ArticleCarouselCard />
 						<ArticleCarouselCard />
 						<ArticleCarouselCard />
