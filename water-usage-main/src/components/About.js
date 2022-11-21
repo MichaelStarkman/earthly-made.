@@ -119,12 +119,12 @@ const mapDesign = designers.map((dev) => {
 
 const About = () => {
   return (
-    <div className='aboutPage container'>
+    <div className=' container'>
       <div className='row'>
-        <div className='col-xxl'>
+        <div className='aboutPage col-xxl'>
           {mapDesign}
         </div>
-        <div className='col-xxl'>
+        <div className='aboutPage col-xxl'>
           {mapDevs}
         </div>
         

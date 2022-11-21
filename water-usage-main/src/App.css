@@ -32,7 +32,11 @@
 }
 
 .aboutPage {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-around;
+
 }
 
 .imageHold {
