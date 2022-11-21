@@ -1,4 +1,4 @@
-import { Button } from 'bootstrap'
+import Button from 'react-bootstrap/Button';
 import React from 'react'
 import '../App.css'
 
@@ -12,7 +12,7 @@ const NewHero = () => {
                 color: 'white',
             }}>Find your next destination for all things sustainable fashion</h2>
         </div>
-        <Button varient="dark">Get Started</Button>
+        <Button variant="dark">Get Started</Button>
     </div>
   )
 }

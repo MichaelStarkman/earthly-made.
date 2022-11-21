@@ -152,6 +152,7 @@
   height: 80vh;
   width: 100vw; 
 }
+
 .hero-text-container{
   display: flex;
   flex-direction: column;
@@ -166,4 +167,3 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
