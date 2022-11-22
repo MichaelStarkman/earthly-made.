@@ -5,7 +5,7 @@ const programmers = [
   {
       name: 'Brandon Wu',
       url: 'https://media-exp1.licdn.com/dms/image/D4E03AQG1Aa9OqPkwmQ/profile-displayphoto-shrink_800_800/0/1667144996437?e=1672876800&v=beta&t=-ez8ZLIGE9DwLa7T0EKbiOCCxKfCenMQSa3q78k20v0',
-      blurb: "Full-Stack Developer that enjoys a freshly-brewed cup of coffee in the morning. I'm always looking to connect with others and love making humorous/unique programs with great teams. Message me at my links below and other places on the internet :)",
+      blurb: "Full-Stack Developer that enjoys a freshly-brewed cup of coffee in the morning. I'm always looking to connect with others and love making humorous/unique programs with great teams. Message me at my links above and other places on the internet :)",
       github: 'https://github.com/brandon-w1205',
       linkedin: 'https://www.linkedin.com/in/brandonjwu/',
       portfolio: 'https://brandonw.vercel.app'
