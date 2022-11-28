@@ -1,4 +1,4 @@
-# water-usage-main
+# Environmental Sustainability Hackathon 2022: earthly made.
 
 eartly made. provides the user with resources to become a more sustainable fashion consumer. The user is able to use the map function to locate resale shops and other businesses that support sustainable fashion. earthly made. features articles about relevant topics in the world of sustainable fashion. earthly made. also highlights brands that are commited to the mission to approach garment production in an ethical and transparent way that considers both the people and the planet.
 
